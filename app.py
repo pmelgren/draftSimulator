@@ -59,6 +59,7 @@ teamnames = 'AABCDEFGHIJKLMNOPQRSTUVWXYZ'
 # Dash app layout
 #######################
 app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
+server = app.server
 
 # header for the app
 header = [
@@ -227,4 +228,4 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
     
 # necessary code at the bottom of all Dash apps to run the app
 if __name__ == "__main__":
-    app.run_server(port = 8080)
+    app.run_server()
