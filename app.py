@@ -36,14 +36,15 @@ def get_auto_picks(start_pick,end_pick,px,pl,n_teams):
         
         # add the autopick to the picks data
         px = px.append({'Team':(teamnames[:n_teams+1]+teamnames[n_teams:0:-1])[pick_number % (2*n_teams)]
+                        ,'Position':pl.loc[pick_idx,'Position(s)']
                         ,'Player':pl.loc[pick_idx,'Player']
-                        ,'Round':pick_number // n_teams + 1
-                        ,'Pick':pick_number % n_teams}
+                        ,'Round':(pick_number-1) // n_teams + 1
+                        ,'Pick':(pick_number-1) % n_teams + 1}
                       ,ignore_index = True)
         
         pl.loc[pick_idx,'Available'] = False
 
-    return px, pl
+    return px, pl    
 
 
 #######################
@@ -83,7 +84,8 @@ header = [
 draftpanel = [
     html.Div([
         html.H3('Select Player'),
-        dcc.Dropdown(options = adp.Rank.astype(str)+'. '+adp.Player, id = 'pick-dropdown'),
+        dcc.Dropdown(options = adp.Rank.astype(str)+'. '+adp.Player+' ('+adp['Position(s)']+')'
+                     ,id = 'pick-dropdown'),
         html.Button('Draft Player', id='draft-button', n_clicks=0)
     ],style={"width": "75%"})
 ]
@@ -137,7 +139,7 @@ def update_date_dropdown(num_teams):
 def update_pick_options(players_json):
     pl = pd.read_json(players_json)
     pl = pl.loc[pl.Available]
-    return [list(pl.Rank.astype(str)+'. '+pl.Player)]
+    return [list(pl.Rank.astype(str)+'. '+pl.Player+' ('+pl['Position(s)']+')')]
 
 @app.callback(
     Output('last-picks-table', 'children'),
@@ -157,7 +159,7 @@ def update_last_picks_table(picks_json,n_teams):
 def update_roster_table(picks_json,teamchoice):
     picks = pd.read_json(picks_json)
     teampx = picks.loc[picks.Team == teamchoice]
-    return make_table(teampx)
+    return make_table(teampx[['Position','Player','Round']])
 
 
 @app.callback(
@@ -189,7 +191,7 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
     if begin_clicks is not None:
     
         # prepare data frames
-        px = pd.DataFrame({'Team':[],'Player':[],'Round':[],'Pick':[]})
+        px = pd.DataFrame({'Team':[],'Position':[],'Player':[],'Round':[],'Pick':[]})
         pl = pd.read_json(players_json)
     
         # initial autopicks    
@@ -207,9 +209,10 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
         
         px = pd.read_json(picks_json)
         px = px.append({'Team':'My-Team'
+                        ,'Position':pl.loc[pick_idx,'Position(s)']
                         ,'Player':pl.loc[pick_idx,'Player']
-                        ,'Round':pick_number // n_teams + 1
-                        ,'Pick':pick_number % n_teams}
+                        ,'Round':(pick_number-1) // n_teams + 1
+                        ,'Pick':(pick_number-1) % n_teams + 1}
                       ,ignore_index = True)
         
         pl.loc[pick_idx,'Available'] = False
@@ -228,4 +231,4 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
     
 # necessary code at the bottom of all Dash apps to run the app
 if __name__ == "__main__":
-    app.run_server()
+    app.run_server(port = 8080)
