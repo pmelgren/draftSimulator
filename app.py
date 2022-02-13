@@ -63,21 +63,47 @@ app = dash.Dash(external_stylesheets=[dbc.themes.BOOTSTRAP])
 server = app.server
 
 # header for the app
-header = [
-    dbc.Col(html.H1('Draft Simulator'), md=6),
+header = [dbc.Row(html.H1('Draft Simulator')),
+          dbc.Row(html.Div(' ',style = {'height': "35px"}))
+]
 
-    dbc.Col(
+startsection = [
+    dbc.Row([
+        dbc.Col(
+            html.Div([
+                dcc.Dropdown(id='n-of-dropdown',options=list(range(3,8)),value=3), 
+                html.Div(children='Select number of OF')  
+            ],style = {'width':'75%'}), md=2),
+        dbc.Col(
+            html.Div([
+                dcc.Dropdown(id='n-p-dropdown',options=list(range(5,16)),value=9), 
+                html.Div(children='Select number of Pitchers')  
+            ],style = {'width':'75%'}), md=2),
+        dbc.Col(
+            html.Div([
+                dcc.Dropdown(id='n-ut-dropdown',options=list(range(0,21)),value=2), 
+                html.Div(children='Select number of Utility players')  
+            ],style = {'width':'75%'}), md=2),
+        dbc.Col(
+            html.Div([
+                dcc.Dropdown(id='n-be-dropdown',options=list(range(0,21)),value=2), 
+                html.Div(children='Select number of Bench Players')  
+            ],style = {'width':'25%'}), md=6)
+    ],id = 'start-row-1'),
+    dbc.Row(html.Div(' ',style = {'height': "25px"})),
+    dbc.Row([
+        dbc.Col(
             html.Div([
                 dcc.Dropdown(id='n-teams-dropdown',options=list(range(2,25)),value=10), 
                 html.Div(children='Select number of teams')  
-            ]), md=2),
-    dbc.Col(
+            ],style = {'width':'75%'}), md=2),
+        dbc.Col(
             html.Div([
                 dcc.Dropdown(id='position-dropdown'), 
                 html.Div(children='Select your draft position')
-            ]), md=2),
-    dbc.Col(html.Button('Begin',id='begin-button'),md=2
-    )   
+            ],style = {'width':'75%'}), md=2),
+        dbc.Col(html.Button('Begin!',id='begin-button',syle={'width': '250%'}),md=8)   
+    ],id = 'start-row-2')
 ]
 
 # put the table of the sorted data in the left half of the screen
@@ -112,8 +138,8 @@ rosterpanel = [
 
 # lay out the app based on the above panel definitions
 app.layout = dbc.Container([
-        dbc.Row(header),
-        dbc.Row(html.Div(' ',style = {'height': "50px"})),
+        html.Div(header),
+        html.Div(startsection,id ='start-section'),
         html.Div(dbc.Row([dbc.Col(draftpanel, md=4),
                  dbc.Col(rosterpanel, md=4),
                  dbc.Col(pickspanel, md=4)])
