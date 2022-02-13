@@ -126,7 +126,7 @@ draftpanel = [
         dcc.Dropdown(options = adp.Rank.astype(str)+'. '+adp.Player+' ('+adp['Position(s)']+')'
                      ,id = 'pick-dropdown'),
         html.Button('Draft Player', id='draft-button', n_clicks=0)
-    ],style={"width": "75%"})
+    ],id='draft-panel',style={"width": "75%"})
 ]
 
 pickspanel = [
@@ -220,8 +220,6 @@ def update_roster_table(picks_json,teamchoice,roster_json):
     teampx = px.loc[px.Team == teamchoice]
     ret = ros.merge(teampx,on='Slot',how='left').sort_values('Num')
     return make_table(ret[['Slot','Player','Round']])
-
-
 @app.callback(
     [Output('n-teams','children'),
      Output('position','children'),
@@ -286,10 +284,10 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
         
         pl.loc[pick_idx,'Available'] = False
         
-        # get next round of auto picks
+        # auto draft to next human pick or end of draft
         human_picks = [position, (2*n_teams + 1 - position)] 
         end_pick = pick_number+1
-        while end_pick % (n_teams*2) not in human_picks:
+        while (end_pick % (n_teams*2) not in human_picks) & (end_pick <= len(ros.Num)*n_teams): 
             end_pick += 1
         
         px, pl = get_auto_picks(pick_number+1,end_pick,px,pl,n_teams,ros)
@@ -299,6 +297,21 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
     else:
         return (prev_n_teams, prev_position, pick_number, picks_json, players_json, 
                 None, None, prev_opts, prev_style1, prev_style2)
+    
+@app.callback(
+    Output('draft-panel','style'),
+    [Input('pick-number','children')],
+    [State('n-teams','children'),
+     State('roster','children'),
+     State('draft-panel','style')]
+)
+def end_draft(pick_num,n_teams,roster_json,prev_style):
+    ros = pd.read_json(roster_json)
+    if pick_num > n_teams*len(ros.index):
+        return {'display':'none'}
+    else:
+        return prev_style
+
     
 # necessary code at the bottom of all Dash apps to run the app
 if __name__ == "__main__":
