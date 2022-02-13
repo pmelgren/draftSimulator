@@ -24,7 +24,7 @@ def make_table(df):
         rows.append(html.Tr(row))
     return rows
 
-def get_auto_picks(start_pick,end_pick,px,pl,n_teams):
+def get_auto_picks(start_pick,end_pick,px,pl,n_teams,roster):
     
     pick_number=start_pick
     for pick_number in range(start_pick,end_pick):
@@ -33,18 +33,30 @@ def get_auto_picks(start_pick,end_pick,px,pl,n_teams):
         randweights = [0]*25+[1]*9+[2]*5+[3]*3+[4]*2+[5]*2+[6]+[7]+[8]+[9]
         pick_no = randweights[random.randrange(0,49)]
         pick_idx = pl.loc[pl.Available].sort_values('Rank',ascending=True).index[pick_no]
+        team = (teamnames[:n_teams+1]+teamnames[n_teams:0:-1])[pick_number % (2*n_teams)]
+        pos= pl.loc[pick_idx,'Position(s)']
         
         # add the autopick to the picks data
-        px = px.append({'Team':(teamnames[:n_teams+1]+teamnames[n_teams:0:-1])[pick_number % (2*n_teams)]
-                        ,'Position':pl.loc[pick_idx,'Position(s)']
+        px = px.append({'Team':team
+                        ,'Position': pos
                         ,'Player':pl.loc[pick_idx,'Player']
                         ,'Round':(pick_number-1) // n_teams + 1
-                        ,'Pick':(pick_number-1) % n_teams + 1}
+                        ,'Pick':(pick_number-1) % n_teams + 1
+                        ,'Slot':determine_slot(pos,roster,px.loc[px.Team == team])}
                       ,ignore_index = True)
         
         pl.loc[pick_idx,'Available'] = False
 
     return px, pl    
+
+def determine_slot(pos, ros, px):
+    m = ros.merge(px,on='Slot',how='left')
+    for p in pos.split(', ') +['UT','BE']:
+        for a in m.loc[m.Player.isna()].sort_values('Num')['Slot']:
+            if p in a:
+                return a
+    else:
+        return '-'
 
 
 #######################
@@ -102,9 +114,10 @@ startsection = [
                 dcc.Dropdown(id='position-dropdown'), 
                 html.Div(children='Select your draft position')
             ],style = {'width':'75%'}), md=2),
-        dbc.Col(html.Button('Begin!',id='begin-button',syle={'width': '250%'}),md=8)   
+        dbc.Col(html.Button('Begin!',id='begin-button',style={'width': '25%'}),md=8)   
     ],id = 'start-row-2')
 ]
+
 
 # put the table of the sorted data in the left half of the screen
 draftpanel = [
@@ -124,7 +137,8 @@ pickspanel = [
         html.Div(players.to_json(),id='players',style={'display': 'none'}),
         html.Div(0,id='n-teams',style={'display': 'none'}),
         html.Div(0,id='position',style={'display': 'none'}),
-        html.Div(0,id='pick-number',style={'display': 'none'})
+        html.Div(0,id='pick-number',style={'display': 'none'}),
+        html.Div(0,id='roster',style={'display': 'none'})
     ],style = {"width": "90%"})
 ]
 
@@ -150,6 +164,23 @@ app.layout = dbc.Container([
 # #######################
 # # Reactive callbacks
 # #######################
+@app.callback(
+    Output('roster','children'),
+    [Input('n-of-dropdown','value'),
+     Input('n-p-dropdown','value'),
+     Input('n-ut-dropdown','value'),
+     Input('n-be-dropdown','value'),
+     Input('begin-button','n_clicks')]
+)
+def update_roster(n_of,n_p,n_ut,n_be,n_clicks):
+    slots = (['C','1B','2B','3B','SS'] + 
+             ['OF'+str(i+1) for i in range(n_of)] + 
+             ['P'+str(i+1) for i in range(n_p)] + 
+             ['UT'+str(i+1) for i in range(n_ut)] + 
+             ['BE'+str(i+1) for i in range(n_be)])
+    
+    roster = pd.DataFrame({'Slot': slots,'Num': list(range(len(slots)))})
+    return roster.to_json()
 
 @app.callback(
     Output('position-dropdown', 'options'),
@@ -180,12 +211,15 @@ def update_last_picks_table(picks_json,n_teams):
 @app.callback(
     Output('roster-table', 'children'),
     [Input('picks','children'),
-     Input('team-roster-dropdown','value')]
+     Input('team-roster-dropdown','value')],
+    [State('roster','children')]
 )
-def update_roster_table(picks_json,teamchoice):
-    picks = pd.read_json(picks_json)
-    teampx = picks.loc[picks.Team == teamchoice]
-    return make_table(teampx[['Position','Player','Round']])
+def update_roster_table(picks_json,teamchoice,roster_json):
+    ros = pd.read_json(roster_json)
+    px = pd.read_json(picks_json)
+    teampx = px.loc[px.Team == teamchoice]
+    ret = ros.merge(teampx,on='Slot',how='left').sort_values('Num')
+    return make_table(ret[['Slot','Player','Round']])
 
 
 @app.callback(
@@ -197,7 +231,8 @@ def update_roster_table(picks_json,teamchoice):
      Output('begin-button','n_clicks'),
      Output('draft-button','n_clicks'),
      Output('team-roster-dropdown','options'),
-     Output('main-section','style')],
+     Output('main-section','style'),
+     Output('start-section','style')],
     [Input('begin-button', 'n_clicks'),
      Input('n-teams-dropdown','value'),
      Input('position-dropdown','value'),
@@ -208,37 +243,45 @@ def update_roster_table(picks_json,teamchoice):
      State('pick-number','children'),
      State('team-roster-dropdown','options'),
      State('main-section','style'),
+     State('start-section','style'),
      State('picks','children'),
-     State('players','children')]
+     State('players','children'),
+     State('roster','children')]
 )
 def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
-                prev_n_teams,prev_position,pick_number,prev_opts,prev_style,
-                picks_json,players_json):
+                prev_n_teams,prev_position,pick_number,prev_opts,
+                prev_style1,prev_style2,picks_json,players_json,roster_json):
     if begin_clicks is not None:
     
         # prepare data frames
-        px = pd.DataFrame({'Team':[],'Position':[],'Player':[],'Round':[],'Pick':[]})
+        px = pd.DataFrame({'Team':[],'Position':[],'Player':[],'Round':[],'Pick':[],'Slot':[]})
         pl = pd.read_json(players_json)
+        ros = pd.read_json(roster_json)
     
         # initial autopicks    
-        px, pl = get_auto_picks(1, position, px, pl, n_teams)   
+        px, pl = get_auto_picks(1, position, px, pl, n_teams, ros)   
         
         # list of team names
         opts = ['My-Team'] + [teamnames[i] for i in range(1,n_teams+1) if i != position]
-        return n_teams, position, position, px.to_json(), pl.to_json(), None, None, opts, {'display':'block'}
+        return (n_teams, position, position, px.to_json(), pl.to_json(),
+                None, None, opts, {'display':'block'}, {'display':'none'})
 
     elif draft_clicks is not None:
         
         pl = pd.read_json(players_json)
         pickrank = int(pick.split('.')[0])
         pick_idx = pl.loc[pl.Rank == pickrank].index[0]
+        pos = pl.loc[pick_idx,'Position(s)']
         
         px = pd.read_json(picks_json)
+        ros = pd.read_json(roster_json)
+        
         px = px.append({'Team':'My-Team'
-                        ,'Position':pl.loc[pick_idx,'Position(s)']
+                        ,'Position': pos
                         ,'Player':pl.loc[pick_idx,'Player']
                         ,'Round':(pick_number-1) // n_teams + 1
-                        ,'Pick':(pick_number-1) % n_teams + 1}
+                        ,'Pick':(pick_number-1) % n_teams + 1
+                        ,'Slot':determine_slot(pos,ros,px.loc[px.Team == 'My-Team'])}
                       ,ignore_index = True)
         
         pl.loc[pick_idx,'Available'] = False
@@ -249,11 +292,13 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
         while end_pick % (n_teams*2) not in human_picks:
             end_pick += 1
         
-        px, pl = get_auto_picks(pick_number+1,end_pick,px,pl,n_teams)
+        px, pl = get_auto_picks(pick_number+1,end_pick,px,pl,n_teams,ros)
         
-        return n_teams, position, end_pick, px.to_json(), pl.to_json(), None, None, prev_opts, prev_style
+        return (n_teams, position, end_pick, px.to_json(), pl.to_json(), 
+                None, None, prev_opts, prev_style1, prev_style2)
     else:
-        return prev_n_teams, prev_position, pick_number, picks_json, players_json, None, None, prev_opts, prev_style
+        return (prev_n_teams, prev_position, pick_number, picks_json, players_json, 
+                None, None, prev_opts, prev_style1, prev_style2)
     
 # necessary code at the bottom of all Dash apps to run the app
 if __name__ == "__main__":
