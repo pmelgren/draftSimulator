@@ -130,3 +130,5 @@ dmypy.json
 
 *.pyc
 .DS_Store
+/source_dat/*.csv
+source_dat/ADP.tsv

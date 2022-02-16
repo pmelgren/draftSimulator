@@ -1,0 +1,861 @@
+,Name,Player,Rank,Position(s),ADP,playerid,AB,H,R,HR,RBI,SB,IP,ER,W,SO,SV,H.P,BB,Available
+0,Trea Turner,"Turner, Trea",1,"2B, SS",1.17,16252,605.0,179.0,103.0,27.0,87.0,30.0,,,,,,,,True
+1,Fernando Tatis Jr.,"Tatis Jr., Fernando",2,"SS, OF",2.5,19709,566.0,163.0,118.0,48.0,119.0,31.0,,,,,,,,True
+2,Jose Ramirez,"Ramirez, Jose",3,3B,2.83,13510,573.0,155.0,102.0,35.0,108.0,26.0,,,,,,,,True
+3,Juan Soto,"Soto, Juan",4,OF,4.33,20123,523.0,163.0,116.0,36.0,115.0,12.0,,,,,,,,True
+4,Bo Bichette,"Bichette, Bo",5,SS,5.33,19612,604.0,175.0,103.0,29.0,98.0,21.0,,,,,,,,True
+5,Gerrit Cole,"Cole, Gerrit",6,P,5.83,13125,,,,,,,199.0,68.0,16.0,267.0,0.0,154.0,52.0,True
+6,Vladimir Guerrero Jr.,"Guerrero Jr., Vladimir",7,1B,7.0,19611,577.0,176.0,114.0,45.0,118.0,3.0,,,,,,,,True
+7,Corbin Burnes,"Burnes, Corbin",8,P,8.67,19361,,,,,,,175.0,58.0,12.0,225.0,0.0,135.0,53.0,True
+8,Shohei Ohtani,"Ohtani, Shohei",9,"P, UT",9.5,19755,541.0,140.0,100.0,40.0,103.0,23.0,156.0,63.0,9.0,183.0,0.0,131.0,56.0,True
+9,Ronald Acuna Jr.,"Acuna Jr., Ronald",10,OF,10.33,18401,476.0,134.0,104.0,36.0,84.0,23.0,,,,,,,,True
+10,Bryce Harper,"Harper, Bryce",11,OF,10.5,11579,545.0,147.0,103.0,36.0,106.0,14.0,,,,,,,,True
+11,Kyle Tucker,"Tucker, Kyle",12,OF,12.17,18345,570.0,161.0,94.0,32.0,104.0,19.0,,,,,,,,True
+12,Max Scherzer,"Scherzer, Max",13,P,15.0,3137,,,,,,,188.0,68.0,13.0,247.0,0.0,146.0,47.0,True
+13,Mookie Betts,"Betts, Mookie",14,OF,15.17,13611,574.0,160.0,114.0,30.0,83.0,18.0,,,,,,,,True
+14,Luis Robert,"Robert, Luis",15,OF,16.33,20043,588.0,166.0,89.0,29.0,90.0,18.0,,,,,,,,True
+15,Walker Buehler,"Buehler, Walker",16,P,16.5,19374,,,,,,,196.0,80.0,13.0,207.0,0.0,173.0,52.0,True
+16,Brandon Woodruff,"Woodruff, Brandon",17,P,17.33,16162,,,,,,,183.0,69.0,12.0,211.0,0.0,155.0,49.0,True
+17,Ozzie Albies,"Albies, Ozzie",18,2B,17.5,16556,607.0,166.0,99.0,27.0,89.0,18.0,,,,,,,,True
+18,Mike Trout,"Trout, Mike",19,OF,17.67,10155,508.0,138.0,105.0,39.0,105.0,10.0,,,,,,,,True
+19,Rafael Devers,"Devers, Rafael",20,3B,18.33,17350,597.0,168.0,102.0,37.0,111.0,6.0,,,,,,,,True
+20,Zack Wheeler,"Wheeler, Zack",21,P,19.67,10310,,,,,,,207.0,79.0,14.0,214.0,0.0,185.0,51.0,True
+21,Freddie Freeman,"Freeman, Freddie",22,1B,23.67,5361,587.0,171.0,104.0,30.0,97.0,7.0,,,,,,,,True
+22,Manny Machado,"Machado, Manny",23,3B,23.83,11493,596.0,163.0,90.0,31.0,107.0,11.0,,,,,,,,True
+23,Liam Hendriks,"Hendriks, Liam",24,P,24.67,3548,,,,,,,68.0,21.0,5.0,100.0,29.0,49.0,16.0,True
+24,Josh Hader,"Hader, Josh",25,P,25.33,14212,,,,,,,67.0,20.0,5.0,111.0,26.0,39.0,27.0,True
+25,Starling Marte,"Marte, Starling",26,OF,25.67,9241,525.0,142.0,81.0,16.0,64.0,31.0,,,,,,,,True
+26,Jacob deGrom,"deGrom, Jacob",27,P,26.17,10954,,,,,,,153.0,41.0,11.0,218.0,0.0,105.0,34.0,True
+27,Whit Merrifield,"Merrifield, Whit",28,"2B, OF",29.5,11281,592.0,166.0,84.0,11.0,59.0,28.0,,,,,,,,True
+28,Shane Bieber,"Bieber, Shane",29,P,32.17,19427,,,,,,,189.0,68.0,13.0,237.0,0.0,160.0,49.0,True
+29,Yordan Alvarez,"Alvarez, Yordan",30,OF,32.17,19556,557.0,159.0,96.0,39.0,119.0,2.0,,,,,,,,True
+30,Cedric Mullins,"Mullins, Cedric",31,OF,32.83,17929,590.0,154.0,86.0,24.0,66.0,26.0,,,,,,,,True
+31,Aaron Nola,"Nola, Aaron",32,P,33.17,16149,,,,,,,191.0,78.0,12.0,217.0,0.0,166.0,54.0,True
+32,Julio Urias,"Urias, Julio",33,P,34.17,14765,,,,,,,159.0,68.0,11.0,161.0,0.0,146.0,41.0,True
+33,Raisel Iglesias,"Iglesias, Raisel",34,P,34.83,17130,,,,,,,68.0,23.0,6.0,92.0,31.0,53.0,18.0,True
+34,Trevor Story,"Story, Trevor",35,SS,35.0,12564,574.0,148.0,90.0,28.0,85.0,23.0,,,,,,,,True
+35,Lucas Giolito,"Giolito, Lucas",36,P,36.17,15474,,,,,,,181.0,74.0,13.0,215.0,0.0,150.0,58.0,True
+36,Tim Anderson,"Anderson, Tim",37,SS,37.33,15172,627.0,182.0,98.0,22.0,71.0,20.0,,,,,,,,True
+37,Salvador Perez,"Perez, Salvador",38,C,37.83,7304,561.0,146.0,74.0,36.0,99.0,1.0,,,,,,,,True
+38,Sandy Alcantara,"Alcantara, Sandy",39,P,39.17,18684,,,,,,,200.0,81.0,12.0,195.0,0.0,180.0,60.0,True
+39,Teoscar Hernandez,"Hernandez, Teoscar",40,OF,39.33,13066,594.0,156.0,90.0,35.0,107.0,10.0,,,,,,,,True
+40,Emmanuel Clase,"Clase, Emmanuel",41,P,40.17,21032,,,,,,,67.0,20.0,5.0,79.0,31.0,54.0,20.0,True
+41,Marcus Semien,"Semien, Marcus",42,"2B, SS",40.83,12533,590.0,155.0,97.0,30.0,82.0,12.0,,,,,,,,True
+42,Aaron Judge,"Judge, Aaron",43,OF,43.33,15640,565.0,155.0,100.0,41.0,107.0,6.0,,,,,,,,True
+43,Edwin Diaz,"Diaz, Edwin",44,P,45.17,14710,,,,,,,67.0,22.0,5.0,100.0,33.0,47.0,26.0,True
+44,Xander Bogaerts,"Bogaerts, Xander",45,SS,47.0,12161,587.0,165.0,91.0,26.0,95.0,7.0,,,,,,,,True
+45,Tyler O'Neill,"O'Neill, Tyler",46,OF,47.5,15711,566.0,146.0,94.0,38.0,100.0,15.0,,,,,,,,True
+46,Freddy Peralta,"Peralta, Freddy",47,P,47.83,18679,,,,,,,140.0,61.0,9.0,180.0,0.0,110.0,59.0,True
+47,Ryan Pressly,"Pressly, Ryan",48,P,48.17,7005,,,,,,,66.0,22.0,5.0,81.0,30.0,54.0,18.0,True
+48,Robbie Ray,"Ray, Robbie",49,P,48.83,11486,,,,,,,193.0,77.0,12.0,253.0,0.0,151.0,66.0,True
+49,Adalberto Mondesi,"Mondesi, Adalberto",50,3B,50.33,13769,548.0,136.0,73.0,19.0,70.0,50.0,,,,,,,,True
+50,Chris Sale,"Sale, Chris",51,P,51.83,10603,,,,,,,149.0,59.0,11.0,185.0,0.0,128.0,42.0,True
+51,Matt Olson,"Olson, Matt",52,1B,52.0,14344,565.0,147.0,95.0,40.0,112.0,3.0,,,,,,,,True
+52,Francisco Lindor,"Lindor, Francisco",53,SS,52.83,12916,582.0,150.0,93.0,29.0,87.0,15.0,,,,,,,,True
+53,Byron Buxton,"Buxton, Byron",54,OF,54.33,14161,524.0,141.0,85.0,32.0,86.0,18.0,,,,,,,,True
+54,J.T. Realmuto,"Realmuto, J.T.",55,C,54.5,11739,538.0,138.0,77.0,22.0,84.0,10.0,,,,,,,,True
+55,Randy Arozarena,"Arozarena, Randy",56,OF,59.17,19290,559.0,144.0,88.0,23.0,75.0,21.0,,,,,,,,True
+56,Logan Webb,"Webb, Logan",57,P,59.33,17995,,,,,,,184.0,69.0,12.0,183.0,0.0,170.0,53.0,True
+57,Aroldis Chapman,"Chapman, Aroldis",58,P,59.83,10233,,,,,,,64.0,21.0,5.0,104.0,32.0,41.0,35.0,True
+58,Paul Goldschmidt,"Goldschmidt, Paul",59,1B,60.0,9218,589.0,160.0,93.0,29.0,90.0,7.0,,,,,,,,True
+59,Will Smith,"Smith, Will",60,C,60.33,19197,434.0,109.0,72.0,27.0,84.0,3.0,,,,,,,,True
+60,Javier Baez,"Baez, Javier",61,"2B, SS",61.83,12979,567.0,143.0,78.0,27.0,84.0,16.0,,,,,,,,True
+61,Wander Franco,"Franco, Wander",62,SS,64.0,23667,584.0,167.0,93.0,19.0,84.0,10.0,,,,,,,,True
+62,Kenley Jansen,"Jansen, Kenley",63,P,64.17,3096,,,,,,,67.0,28.0,4.0,84.0,0.0,54.0,26.0,True
+63,Austin Riley,"Riley, Austin",64,3B,64.5,18360,597.0,163.0,88.0,33.0,102.0,1.0,,,,,,,,True
+64,Max Fried,"Fried, Max",65,P,66.0,13743,,,,,,,183.0,72.0,14.0,174.0,0.0,170.0,50.0,True
+65,Pete Alonso,"Alonso, Pete",66,1B,66.17,19251,565.0,146.0,91.0,42.0,112.0,2.0,,,,,,,,True
+66,Will Smith,"Smith, Will",67,P,67.83,8048,,,,,,,70.0,30.0,5.0,87.0,28.0,58.0,26.0,True
+67,Lance Lynn,"Lynn, Lance",68,P,68.33,2520,,,,,,,182.0,81.0,12.0,194.0,0.0,166.0,59.0,True
+68,Joe Musgrove,"Musgrove, Joe",69,P,69.0,12970,,,,,,,179.0,74.0,12.0,191.0,0.0,159.0,51.0,True
+69,Dylan Cease,"Cease, Dylan",70,P,69.67,18525,,,,,,,163.0,72.0,11.0,200.0,0.0,137.0,71.0,True
+70,Jazz Chisholm Jr.,"Chisholm Jr., Jazz",71,"2B, SS",69.83,20454,494.0,116.0,70.0,21.0,61.0,21.0,,,,,,,,True
+71,Kevin Gausman,"Gausman, Kevin",72,P,71.17,14107,,,,,,,187.0,78.0,13.0,203.0,0.0,168.0,49.0,True
+72,Nick Castellanos,"Castellanos, Nick",73,OF,73.83,11737,592.0,165.0,93.0,31.0,98.0,3.0,,,,,,,,True
+73,Tommy Edman,"Edman, Tommy",74,"2B, OF",75.0,19470,566.0,154.0,80.0,12.0,56.0,24.0,,,,,,,,True
+74,Jordan Romano,"Romano, Jordan",75,P,75.83,16122,,,,,,,66.0,25.0,5.0,86.0,27.0,51.0,25.0,True
+75,George Springer,"Springer, George",76,OF,76.17,12856,567.0,149.0,104.0,35.0,92.0,8.0,,,,,,,,True
+76,Brandon Lowe,"Lowe, Brandon",77,2B,76.17,18882,538.0,132.0,88.0,34.0,94.0,7.0,,,,,,,,True
+77,Trevor Rogers,"Rogers, Trevor",78,P,79.67,22286,,,,,,,146.0,58.0,10.0,166.0,0.0,126.0,52.0,True
+78,Eloy Jimenez,"Jimenez, Eloy",79,OF,80.0,17484,581.0,158.0,80.0,34.0,104.0,1.0,,,,,,,,True
+79,Jorge Polanco,"Polanco, Jorge",80,"2B, SS",80.33,13152,584.0,160.0,89.0,25.0,86.0,11.0,,,,,,,,True
+80,Jose Berrios,"Berrios, Jose",81,P,80.67,14168,,,,,,,196.0,85.0,13.0,202.0,0.0,180.0,53.0,True
+81,Frankie Montas,"Montas, Frankie",82,P,81.17,14309,,,,,,,177.0,71.0,12.0,190.0,0.0,158.0,53.0,True
+82,Jose Altuve,"Altuve, Jose",83,2B,83.83,5417,568.0,158.0,99.0,25.0,76.0,7.0,,,,,,,,True
+83,Jack Flaherty,"Flaherty, Jack",84,P,84.67,17479,,,,,,,169.0,70.0,11.0,184.0,0.0,144.0,56.0,True
+84,Nolan Arenado,"Arenado, Nolan",85,3B,85.17,9777,604.0,159.0,86.0,32.0,103.0,2.0,,,,,,,,True
+85,Jonathan India,"India, Jonathan",86,2B,85.67,21523,546.0,142.0,96.0,21.0,71.0,12.0,,,,,,,,True
+86,Bobby Witt Jr.,"Witt Jr., Bobby",87,SS,86.33,sa3011225,527.0,141.0,72.0,23.0,73.0,21.0,,,,,,,,True
+87,Jose Abreu,"Abreu, Jose",88,1B,86.5,15676,593.0,155.0,84.0,31.0,109.0,1.0,,,,,,,,True
+88,Giovanny Gallegos,"Gallegos, Giovanny",89,P,88.0,14986,,,,,,,70.0,27.0,5.0,84.0,23.0,56.0,21.0,True
+89,Corey Seager,"Seager, Corey",90,SS,88.67,13624,520.0,151.0,88.0,25.0,87.0,4.0,,,,,,,,True
+90,Ketel Marte,"Marte, Ketel",91,"2B, OF",89.17,13613,580.0,168.0,86.0,21.0,77.0,5.0,,,,,,,,True
+91,Luis Castillo,"Castillo, Luis",92,P,90.17,15689,,,,,,,192.0,82.0,14.0,202.0,0.0,175.0,71.0,True
+92,Charlie Morton,"Morton, Charlie",93,P,90.67,4676,,,,,,,165.0,65.0,12.0,184.0,0.0,142.0,54.0,True
+93,Yu Darvish,"Darvish, Yu",94,P,92.0,13074,,,,,,,165.0,73.0,10.0,185.0,0.0,146.0,50.0,True
+94,J.D. Martinez,"Martinez, J.D.",95,OF,95.5,6184,592.0,160.0,89.0,30.0,98.0,1.0,,,,,,,,True
+95,Bryan Reynolds,"Reynolds, Bryan",96,OF,95.83,19326,581.0,162.0,89.0,23.0,87.0,5.0,,,,,,,,True
+96,Daulton Varsho,"Varsho, Daulton",97,"C, OF",97.83,19918,393.0,99.0,56.0,16.0,53.0,9.0,,,,,,,,True
+97,Alek Manoah,"Manoah, Alek",98,P,98.5,26410,,,,,,,141.0,60.0,10.0,160.0,0.0,119.0,51.0,True
+98,Cody Bellinger,"Bellinger, Cody",99,OF,99.17,15998,507.0,124.0,81.0,29.0,90.0,11.0,,,,,,,,True
+99,Shane McClanahan,"McClanahan, Shane",100,P,101.67,21483,,,,,,,149.0,62.0,11.0,166.0,0.0,133.0,51.0,True
+100,Kris Bryant,"Bryant, Kris",101,"3B, OF",102.0,15429,522.0,134.0,82.0,23.0,73.0,7.0,,,,,,,,True
+101,Alex Bregman,"Bregman, Alex",102,3B,103.5,17678,529.0,144.0,91.0,26.0,93.0,3.0,,,,,,,,True
+102,Justin Verlander,"Verlander, Justin",103,P,105.33,8700,,,,,,,180.0,70.0,14.0,220.0,0.0,145.0,40.0,True
+103,Christian Yelich,"Yelich, Christian",104,OF,105.33,11477,544.0,143.0,93.0,26.0,86.0,16.0,,,,,,,,True
+104,Yasmani Grandal,"Grandal, Yasmani",105,C,106.5,11368,434.0,102.0,72.0,26.0,77.0,1.0,,,,,,,,True
+105,Blake Snell,"Snell, Blake",106,P,106.83,13543,,,,,,,151.0,62.0,10.0,185.0,0.0,123.0,67.0,True
+106,Craig Kimbrel,"Kimbrel, Craig",107,P,110.5,6655,,,,,,,66.0,27.0,5.0,98.0,4.0,47.0,32.0,True
+107,Willson Contreras,"Contreras, Willson",108,C,111.33,11609,494.0,118.0,72.0,24.0,75.0,5.0,,,,,,,,True
+108,Anthony Rendon,"Rendon, Anthony",109,3B,111.5,12861,493.0,134.0,77.0,21.0,83.0,2.0,,,,,,,,True
+109,Carlos Correa,"Correa, Carlos",110,SS,113.0,14162,555.0,154.0,90.0,28.0,96.0,1.0,,,,,,,,True
+110,Ryan Mountcastle,"Mountcastle, Ryan",111,"1B, OF",114.17,18373,578.0,152.0,79.0,30.0,94.0,4.0,,,,,,,,True
+111,Nathan Eovaldi,"Eovaldi, Nathan",112,P,115.5,9132,,,,,,,179.0,76.0,12.0,186.0,0.0,173.0,43.0,True
+112,Jesse Winker,"Winker, Jesse",113,OF,116.0,13590,493.0,140.0,84.0,25.0,78.0,2.0,,,,,,,,True
+113,Myles Straw,"Straw, Myles",114,OF,116.67,17620,495.0,132.0,67.0,4.0,40.0,26.0,,,,,,,,True
+114,DJ LeMahieu,"LeMahieu, DJ",115,"1B, 2B, 3B",118.0,9874,576.0,163.0,89.0,14.0,64.0,5.0,,,,,,,,True
+115,Giancarlo Stanton,"Stanton, Giancarlo",116,OF,119.17,4949,521.0,136.0,80.0,36.0,102.0,1.0,,,,,,,,True
+116,Dansby Swanson,"Swanson, Dansby",117,SS,119.5,18314,596.0,147.0,85.0,24.0,79.0,10.0,,,,,,,,True
+117,Shane Baz,"Baz, Shane",118,P,120.33,22264,,,,,,,104.0,42.0,7.0,119.0,0.0,89.0,34.0,True
+118,Mitch Haniger,"Haniger, Mitch",119,OF,120.83,14274,548.0,135.0,87.0,30.0,85.0,3.0,,,,,,,,True
+119,Mark Melancon,"Melancon, Mark",120,P,122.0,4264,,,,,,,65.0,28.0,4.0,53.0,30.0,66.0,23.0,True
+120,Jared Walsh,"Walsh, Jared",121,1B,123.0,18607,583.0,153.0,86.0,34.0,108.0,2.0,,,,,,,,True
+121,Jake Cronenworth,"Cronenworth, Jake",122,"1B, 2B, SS",124.33,18036,561.0,153.0,83.0,17.0,72.0,7.0,,,,,,,,True
+122,Willy Adames,"Adames, Willy",123,SS,126.17,15986,548.0,139.0,80.0,24.0,74.0,7.0,,,,,,,,True
+123,Pablo Lopez,"Lopez, Pablo",124,P,127.0,17085,,,,,,,155.0,64.0,10.0,154.0,0.0,143.0,41.0,True
+124,Sean Manaea,"Manaea, Sean",125,P,127.17,15873,,,,,,,175.0,71.0,12.0,176.0,0.0,164.0,41.0,True
+125,Zac Gallen,"Gallen, Zac",126,P,127.83,19291,,,,,,,173.0,80.0,11.0,186.0,0.0,159.0,64.0,True
+126,Tyler Mahle,"Mahle, Tyler",127,P,128.83,16358,,,,,,,169.0,81.0,10.0,184.0,0.0,159.0,61.0,True
+127,Josh Bell,"Bell, Josh",128,1B,130.0,13145,553.0,147.0,87.0,31.0,105.0,0.0,,,,,,,,True
+128,Ke'Bryan Hayes,"Hayes, Ke'Bryan",129,3B,130.0,18577,540.0,140.0,75.0,14.0,59.0,11.0,,,,,,,,True
+129,Trent Grisham,"Grisham, Trent",130,OF,130.67,18564,520.0,128.0,80.0,20.0,68.0,15.0,,,,,,,,True
+130,Corey Knebel,"Knebel, Corey",131,P,131.0,15010,,,,,,,60.0,25.0,3.0,77.0,15.0,49.0,25.0,True
+131,C.J. Cron,"Cron, C.J.",132,1B,131.0,12546,511.0,137.0,75.0,30.0,94.0,1.0,,,,,,,,True
+132,Carlos Rodon,"Rodon, Carlos",133,P,133.33,16137,,,,,,,150.0,63.0,11.0,186.0,0.0,125.0,53.0,True
+133,Chris Bassitt,"Bassitt, Chris",134,P,134.5,12304,,,,,,,179.0,77.0,10.0,168.0,0.0,163.0,52.0,True
+134,Akil Baddoo,"Baddoo, Akil",135,OF,136.0,22168,547.0,138.0,80.0,18.0,69.0,23.0,,,,,,,,True
+135,Rhys Hoskins,"Hoskins, Rhys",136,1B,139.67,16472,447.0,106.0,75.0,28.0,78.0,4.0,,,,,,,,True
+136,Franmil Reyes,"Reyes, Franmil",137,UT,139.67,14566,575.0,146.0,84.0,40.0,109.0,4.0,,,,,,,,True
+137,Amed Rosario,"Rosario, Amed",138,SS,140.83,15518,555.0,153.0,73.0,13.0,62.0,13.0,,,,,,,,True
+138,Kyle Schwarber,"Schwarber, Kyle",139,OF,141.5,16478,494.0,123.0,84.0,35.0,91.0,2.0,,,,,,,,True
+139,Camilo Doval,"Doval, Camilo",140,P,142.0,21992,,,,,,,67.0,28.0,5.0,82.0,26.0,54.0,38.0,True
+140,Gleyber Torres,"Torres, Gleyber",141,SS,142.0,16997,576.0,152.0,80.0,23.0,83.0,13.0,,,,,,,,True
+141,Luis Urias,"Urias, Luis",142,"2B, 3B, SS",142.17,16622,515.0,131.0,74.0,20.0,73.0,6.0,,,,,,,,True
+142,Framber Valdez,"Valdez, Framber",143,P,142.17,17295,,,,,,,188.0,79.0,13.0,176.0,0.0,175.0,79.0,True
+143,Chris Taylor,"Taylor, Chris",144,"2B, SS, OF",142.5,13757,559.0,138.0,83.0,20.0,81.0,11.0,,,,,,,,True
+144,Eduardo Rodriguez,"Rodriguez, Eduardo",145,P,142.5,13164,,,,,,,183.0,74.0,12.0,193.0,0.0,169.0,58.0,True
+145,Jarred Kelenic,"Kelenic, Jarred",146,OF,142.5,22558,508.0,117.0,68.0,24.0,75.0,13.0,,,,,,,,True
+146,Logan Gilbert,"Gilbert, Logan",147,P,145.83,22250,,,,,,,133.0,61.0,8.0,138.0,0.0,123.0,37.0,True
+147,Blake Treinen,"Treinen, Blake",148,P,145.83,12572,,,,,,,70.0,27.0,6.0,78.0,27.0,59.0,26.0,True
+148,Scott Barlow,"Barlow, Scott",149,P,147.83,14993,,,,,,,66.0,27.0,4.0,81.0,27.0,56.0,28.0,True
+149,Luis Garcia,"Garcia, Luis",150,P,148.33,23735,,,,,,,161.0,74.0,11.0,172.0,0.0,147.0,57.0,True
+150,Joey Votto,"Votto, Joey",151,1B,148.33,4314,559.0,139.0,85.0,32.0,97.0,2.0,,,,,,,,True
+151,Yoan Moncada,"Moncada, Yoan",152,3B,148.33,17232,559.0,145.0,83.0,21.0,75.0,5.0,,,,,,,,True
+152,Lourdes Gurriel Jr.,"Gurriel Jr., Lourdes",153,OF,151.0,19238,551.0,150.0,73.0,26.0,87.0,4.0,,,,,,,,True
+153,Austin Meadows,"Meadows, Austin",154,OF,153.83,15672,540.0,136.0,81.0,28.0,94.0,7.0,,,,,,,,True
+154,Ty France,"France, Ty",155,"1B, 2B",154.5,17982,571.0,158.0,82.0,22.0,83.0,1.0,,,,,,,,True
+155,Taylor Rogers,"Rogers, Taylor",156,P,158.33,13449,,,,,,,67.0,21.0,5.0,84.0,24.0,55.0,18.0,True
+156,Tyler Stephenson,"Stephenson, Tyler",157,"C, 1B",158.5,17988,388.0,103.0,55.0,12.0,50.0,1.0,,,,,,,,True
+157,Michael Kopech,"Kopech, Michael",158,P,159.33,17282,,,,,,,111.0,47.0,7.0,143.0,0.0,91.0,46.0,True
+158,Eddie Rosario,"Rosario, Eddie",159,OF,161.33,12155,547.0,147.0,75.0,26.0,90.0,9.0,,,,,,,,True
+159,David Bednar,"Bednar, David",160,P,161.67,19569,,,,,,,64.0,26.0,3.0,76.0,24.0,54.0,25.0,True
+160,Alex Verdugo,"Verdugo, Alex",161,OF,162.67,17027,547.0,158.0,81.0,15.0,65.0,7.0,,,,,,,,True
+161,Gregory Soto,"Soto, Gregory",162,P,163.33,19677,,,,,,,68.0,29.0,4.0,82.0,24.0,56.0,38.0,True
+162,Keibert Ruiz,"Ruiz, Keibert",163,C,163.33,19610,462.0,125.0,59.0,21.0,70.0,1.0,,,,,,,,True
+163,Ryan McMahon,"McMahon, Ryan",164,"2B, 3B",163.33,15112,515.0,131.0,74.0,24.0,81.0,5.0,,,,,,,,True
+164,Ian Anderson,"Anderson, Ian",165,P,163.83,19951,,,,,,,156.0,71.0,10.0,160.0,0.0,141.0,68.0,True
+165,Avisail Garcia,"Garcia, Avisail",166,OF,164.33,5760,545.0,141.0,71.0,23.0,78.0,8.0,,,,,,,,True
+166,Justin Turner,"Turner, Justin",167,3B,167.83,5235,522.0,140.0,79.0,22.0,83.0,3.0,,,,,,,,True
+167,Anthony Rizzo,"Rizzo, Anthony",168,1B,168.33,3473,507.0,131.0,78.0,25.0,81.0,6.0,,,,,,,,True
+168,Hunter Renfroe,"Renfroe, Hunter",169,OF,168.83,15464,523.0,122.0,78.0,34.0,90.0,3.0,,,,,,,,True
+169,Kolten Wong,"Wong, Kolten",170,2B,171.0,12532,521.0,138.0,75.0,14.0,55.0,15.0,,,,,,,,True
+170,Max Muncy,"Muncy, Max",171,"1B, 2B",172.17,13301,471.0,117.0,86.0,32.0,95.0,3.0,,,,,,,,True
+171,Sonny Gray,"Gray, Sonny",172,P,172.5,12768,,,,,,,157.0,73.0,10.0,167.0,0.0,143.0,63.0,True
+172,Tarik Skubal,"Skubal, Tarik",173,P,172.83,22267,,,,,,,154.0,71.0,10.0,166.0,0.0,142.0,51.0,True
+173,Robbie Grossman,"Grossman, Robbie",174,OF,173.0,5254,510.0,123.0,75.0,17.0,59.0,15.0,,,,,,,,True
+174,Brendan Rodgers,"Rodgers, Brendan",175,"2B, SS",174.67,17907,525.0,147.0,72.0,21.0,70.0,1.0,,,,,,,,True
+175,Andrew Benintendi,"Benintendi, Andrew",176,OF,176.67,17901,500.0,134.0,69.0,16.0,67.0,11.0,,,,,,,,True
+176,Dylan Carlson,"Carlson, Dylan",177,OF,177.17,20126,554.0,143.0,78.0,20.0,75.0,4.0,,,,,,,,True
+177,Ranger Suarez,"Suarez, Ranger",178,P,179.5,17277,,,,,,,141.0,62.0,9.0,129.0,0.0,133.0,50.0,True
+178,Matt Chapman,"Chapman, Matt",179,3B,181.5,16505,564.0,127.0,83.0,29.0,84.0,3.0,,,,,,,,True
+179,Ian Happ,"Happ, Ian",180,OF,181.83,17919,560.0,134.0,84.0,31.0,89.0,10.0,,,,,,,,True
+180,Jean Segura,"Segura, Jean",181,2B,184.17,5933,549.0,154.0,77.0,13.0,60.0,10.0,,,,,,,,True
+181,Trey Mancini,"Mancini, Trey",182,1B,185.5,15149,577.0,152.0,82.0,26.0,84.0,1.0,,,,,,,,True
+182,Michael Conforto,"Conforto, Michael",183,OF,186.0,16376,524.0,132.0,78.0,23.0,82.0,3.0,,,,,,,,True
+183,Jordan Montgomery,"Montgomery, Jordan",184,P,186.5,16511,,,,,,,158.0,70.0,9.0,162.0,0.0,150.0,47.0,True
+184,Adolis Garcia,"Garcia, Adolis",185,OF,187.5,19287,588.0,136.0,74.0,28.0,88.0,13.0,,,,,,,,True
+185,Patrick Sandoval,"Sandoval, Patrick",186,P,188.17,19447,,,,,,,126.0,56.0,8.0,135.0,0.0,114.0,52.0,True
+186,Marcus Stroman,"Stroman, Marcus",187,P,189.5,13431,,,,,,,184.0,82.0,12.0,152.0,0.0,187.0,53.0,True
+187,Clayton Kershaw,"Kershaw, Clayton",188,P,189.67,2036,,,,,,,148.0,58.0,11.0,158.0,0.0,133.0,33.0,True
+188,Eduardo Escobar,"Escobar, Eduardo",189,"2B, 3B",191.0,6153,541.0,132.0,70.0,26.0,82.0,1.0,,,,,,,,True
+189,Luis Severino,"Severino, Luis",190,P,192.33,15890,,,,,,,136.0,58.0,10.0,142.0,0.0,126.0,40.0,True
+190,Alex Kirilloff,"Kirilloff, Alex",191,"1B, OF",192.67,20325,439.0,118.0,54.0,17.0,62.0,4.0,,,,,,,,True
+191,Joey Gallo,"Gallo, Joey",192,OF,195.0,14128,520.0,107.0,95.0,43.0,104.0,6.0,,,,,,,,True
+192,Hyun Jin Ryu,"Ryu, Hyun Jin",193,P,195.0,14444,,,,,,,175.0,76.0,13.0,150.0,0.0,174.0,39.0,True
+193,Marcell Ozuna,"Ozuna, Marcell",194,OF,197.33,10324,575.0,151.0,82.0,29.0,100.0,4.0,,,,,,,,True
+194,Jorge Soler,"Soler, Jorge",195,OF,198.67,14221,545.0,129.0,83.0,35.0,96.0,1.0,,,,,,,,True
+195,Jeimer Candelario,"Candelario, Jeimer",196,3B,200.0,13621,555.0,141.0,75.0,19.0,71.0,1.0,,,,,,,,True
+196,Mitch Garver,"Garver, Mitch",197,C,200.0,15161,354.0,84.0,53.0,19.0,55.0,2.0,,,,,,,,True
+197,Lucas Sims,"Sims, Lucas",198,P,200.67,13470,,,,,,,65.0,27.0,4.0,93.0,26.0,50.0,30.0,True
+198,Tanner Houck,"Houck, Tanner",199,P,200.83,19879,,,,,,,102.0,49.0,6.0,110.0,0.0,95.0,39.0,True
+199,Jonathan Schoop,"Schoop, Jonathan",200,"1B, 2B",200.83,11265,565.0,149.0,76.0,22.0,75.0,2.0,,,,,,,,True
+200,Nelson Cruz,"Cruz, Nelson",201,UT,201.0,2434,509.0,133.0,76.0,31.0,89.0,2.0,,,,,,,,True
+201,Eugenio Suarez,"Suarez, Eugenio",202,"3B, SS",202.0,12552,495.0,114.0,71.0,31.0,89.0,1.0,,,,,,,,True
+202,Lance McCullers Jr.,"McCullers Jr., Lance",203,P,202.33,14120,,,,,,,146.0,59.0,10.0,161.0,0.0,125.0,62.0,True
+203,Yuli Gurriel,"Gurriel, Yuli",204,1B,202.83,19198,540.0,153.0,75.0,17.0,77.0,2.0,,,,,,,,True
+204,Josh Donaldson,"Donaldson, Josh",205,3B,206.17,5038,502.0,123.0,81.0,28.0,81.0,1.0,,,,,,,,True
+205,Oneil Cruz,"Cruz, Oneil",206,SS,206.5,21711,444.0,122.0,58.0,22.0,67.0,18.0,,,,,,,,True
+206,Dylan Floro,"Floro, Dylan",207,P,210.17,13394,,,,,,,67.0,27.0,5.0,60.0,19.0,63.0,24.0,True
+207,Seiya Suzuki,"Suzuki, Seiya",208,OF,211.33,,,,,,,,,,,,,,,True
+208,AJ Pollock,"Pollock, AJ",209,OF,212.33,9256,496.0,131.0,70.0,25.0,85.0,8.0,,,,,,,,True
+209,Joe Barlow,"Barlow, Joe",210,P,212.83,22296,,,,,,,66.0,34.0,3.0,72.0,24.0,58.0,36.0,True
+210,Josh Rojas,"Rojas, Josh",211,"2B, SS, OF",215.33,19734,495.0,122.0,68.0,13.0,51.0,14.0,,,,,,,,True
+211,Brandon Belt,"Belt, Brandon",212,1B,215.33,10264,473.0,116.0,75.0,25.0,70.0,4.0,,,,,,,,True
+212,Joe Ryan,"Ryan, Joe",213,P,217.17,21390,,,,,,,129.0,61.0,8.0,135.0,0.0,119.0,36.0,True
+213,Alex Wood,"Wood, Alex",214,P,217.67,13781,,,,,,,158.0,66.0,10.0,160.0,0.0,149.0,47.0,True
+214,Nathaniel Lowe,"Lowe, Nathaniel",215,1B,218.67,19566,545.0,142.0,80.0,23.0,79.0,6.0,,,,,,,,True
+215,Adam Wainwright,"Wainwright, Adam",216,P,218.83,2233,,,,,,,190.0,89.0,12.0,151.0,0.0,190.0,55.0,True
+216,Brandon Crawford,"Crawford, Brandon",217,SS,219.0,5343,524.0,133.0,69.0,19.0,74.0,8.0,,,,,,,,True
+217,Bobby Dalbec,"Dalbec, Bobby",218,1B,221.17,19966,444.0,103.0,60.0,26.0,72.0,3.0,,,,,,,,True
+218,Harrison Bader,"Bader, Harrison",219,OF,221.5,18030,532.0,131.0,76.0,21.0,71.0,14.0,,,,,,,,True
+219,Triston McKenzie,"McKenzie, Triston",220,P,222.67,18000,,,,,,,115.0,58.0,7.0,131.0,0.0,101.0,50.0,True
+220,Enrique Hernandez,"Hernandez, Enrique",221,"2B, OF",222.83,10472,567.0,144.0,88.0,25.0,76.0,3.0,,,,,,,,True
+221,Ramon Laureano,"Laureano, Ramon",222,OF,223.67,17128,485.0,122.0,71.0,22.0,68.0,15.0,,,,,,,,True
+222,Jose Urquidy,"Urquidy, Jose",223,P,224.17,18413,,,,,,,129.0,64.0,7.0,115.0,0.0,127.0,31.0,True
+223,Alex Cobb,"Cobb, Alex",224,P,224.33,6562,,,,,,,149.0,67.0,10.0,135.0,0.0,147.0,48.0,True
+224,Jesus Sanchez,"Sanchez, Jesus",225,OF,226.67,19913,488.0,122.0,63.0,24.0,72.0,2.0,,,,,,,,True
+225,Adley Rutschman,"Rutschman, Adley",226,C,227.33,sa3011643,354.0,93.0,53.0,15.0,50.0,2.0,,,,,,,,True
+226,Anthony DeSclafani,"DeSclafani, Anthony",227,P,227.67,13050,,,,,,,168.0,80.0,10.0,149.0,0.0,165.0,48.0,True
+227,Gavin Lux,"Lux, Gavin",228,"2B, SS",229.33,19955,448.0,113.0,65.0,15.0,63.0,6.0,,,,,,,,True
+228,Christian Vazquez,"Vazquez, Christian",229,C,229.67,9774,341.0,87.0,40.0,9.0,39.0,5.0,,,,,,,,True
+229,Tommy Pham,"Pham, Tommy",230,OF,229.83,2967,481.0,121.0,73.0,17.0,58.0,15.0,,,,,,,,True
+230,John Means,"Means, John",231,P,230.17,16269,,,,,,,165.0,79.0,11.0,150.0,0.0,159.0,38.0,True
+231,Jo Adell,"Adell, Jo",232,OF,232.33,20220,504.0,122.0,62.0,23.0,79.0,9.0,,,,,,,,True
+232,Austin Hays,"Hays, Austin",233,OF,232.67,19363,543.0,140.0,76.0,25.0,78.0,7.0,,,,,,,,True
+233,Garrett Whitlock,"Whitlock, Garrett",234,P,233.33,20191,,,,,,,68.0,29.0,5.0,69.0,20.0,64.0,22.0,True
+234,Mike Clevinger,"Clevinger, Mike",235,P,233.67,12808,,,,,,,141.0,56.0,10.0,155.0,0.0,120.0,47.0,True
+235,Lane Thomas,"Thomas, Lane",236,OF,237.17,16939,431.0,103.0,65.0,16.0,57.0,11.0,,,,,,,,True
+236,Charlie Blackmon,"Blackmon, Charlie",237,OF,238.17,7859,533.0,148.0,80.0,18.0,76.0,3.0,,,,,,,,True
+237,Steven Matz,"Matz, Steven",238,P,239.0,13361,,,,,,,156.0,72.0,10.0,140.0,0.0,153.0,49.0,True
+238,Jon Gray,"Gray, Jon",239,P,240.0,14916,,,,,,,169.0,79.0,11.0,172.0,0.0,161.0,62.0,True
+239,Andres Gimenez,"Gimenez, Andres",240,"2B, SS",240.5,19950,454.0,113.0,58.0,15.0,52.0,19.0,,,,,,,,True
+240,Lou Trivino,"Trivino, Lou",241,P,241.5,15043,,,,,,,65.0,30.0,5.0,63.0,24.0,59.0,30.0,True
+241,Frank Schwindel,"Schwindel, Frank",242,1B,241.5,15351,513.0,137.0,72.0,25.0,79.0,3.0,,,,,,,,True
+242,Travis d'Arnaud,"d'Arnaud, Travis",243,C,243.17,7739,514.0,127.0,63.0,20.0,74.0,1.0,,,,,,,,True
+243,Andrew Kittredge,"Kittredge, Andrew",244,P,244.5,12828,,,,,,,65.0,23.0,5.0,71.0,20.0,57.0,16.0,True
+244,Miguel Sano,"Sano, Miguel",245,1B,248.33,12164,562.0,128.0,88.0,38.0,99.0,2.0,,,,,,,,True
+245,Nicky Lopez,"Lopez, Nicky",246,SS,249.0,19339,544.0,147.0,70.0,5.0,48.0,16.0,,,,,,,,True
+246,Elias Diaz,"Diaz, Elias",247,C,249.17,11680,325.0,86.0,42.0,12.0,43.0,1.0,,,,,,,,True
+247,Abraham Toro,"Toro, Abraham",248,"2B, 3B",249.5,19844,410.0,102.0,56.0,14.0,52.0,6.0,,,,,,,,True
+248,Jonathan Villar,"Villar, Jonathan",249,"3B, SS",249.83,10071,420.0,104.0,56.0,13.0,45.0,18.0,,,,,,,,True
+249,Alejandro Kirk,"Kirk, Alejandro",250,C,250.0,22581,318.0,85.0,45.0,14.0,47.0,1.0,,,,,,,,True
+250,Michael Brantley,"Brantley, Michael",251,OF,251.5,4106,490.0,144.0,70.0,13.0,60.0,3.0,,,,,,,,True
+251,Adam Duvall,"Duvall, Adam",252,OF,251.83,10950,573.0,130.0,79.0,38.0,114.0,4.0,,,,,,,,True
+252,Bailey Ober,"Ober, Bailey",253,P,253.5,21224,,,,,,,132.0,64.0,7.0,130.0,0.0,131.0,33.0,True
+253,Huascar Ynoa,"Ynoa, Huascar",254,P,253.67,20468,,,,,,,107.0,50.0,6.0,112.0,0.0,101.0,39.0,True
+254,Sean Murphy,"Murphy, Sean",255,C,256.83,19352,402.0,91.0,54.0,18.0,58.0,1.0,,,,,,,,True
+255,Noah Syndergaard,"Syndergaard, Noah",256,P,258.33,11762,,,,,,,161.0,76.0,9.0,143.0,0.0,164.0,42.0,True
+256,Andrew Vaughn,"Vaughn, Andrew",257,OF,260.83,26197,440.0,110.0,60.0,19.0,58.0,2.0,,,,,,,,True
+257,German Marquez,"Marquez, German",258,P,263.5,15038,,,,,,,191.0,96.0,12.0,185.0,0.0,198.0,62.0,True
+258,Garrett Hampson,"Hampson, Garrett",259,"2B, OF",263.83,19262,426.0,105.0,58.0,11.0,42.0,19.0,,,,,,,,True
+259,Mark Canha,"Canha, Mark",260,OF,264.5,11445,486.0,114.0,77.0,19.0,64.0,8.0,,,,,,,,True
+260,Casey Mize,"Mize, Casey",261,P,265.0,20492,,,,,,,161.0,79.0,9.0,133.0,0.0,162.0,49.0,True
+261,Spencer Torkelson,"Torkelson, Spencer",262,1B,265.33,sa3014504,484.0,123.0,76.0,30.0,81.0,5.0,,,,,,,,True
+262,Andrew Heaney,"Heaney, Andrew",263,P,265.83,15423,,,,,,,116.0,56.0,8.0,126.0,0.0,110.0,33.0,True
+263,Anthony Santander,"Santander, Anthony",264,OF,266.0,14551,519.0,132.0,67.0,24.0,76.0,2.0,,,,,,,,True
+264,Drew Rasmussen,"Rasmussen, Drew",265,P,266.83,25385,,,,,,,114.0,50.0,6.0,123.0,0.0,101.0,46.0,True
+265,Omar Narvaez,"Narvaez, Omar",266,C,267.0,13338,363.0,91.0,45.0,12.0,45.0,0.0,,,,,,,,True
+266,Gio Urshela,"Urshela, Gio",267,"3B, SS",267.33,10681,553.0,149.0,69.0,20.0,76.0,2.0,,,,,,,,True
+267,Wil Myers,"Myers, Wil",268,OF,268.5,10047,560.0,134.0,72.0,23.0,78.0,11.0,,,,,,,,True
+268,Aaron Ashby,"Ashby, Aaron",269,P,268.67,23550,,,,,,,81.0,32.0,6.0,96.0,1.0,68.0,37.0,True
+269,Max Kepler,"Kepler, Max",270,OF,271.17,12144,487.0,115.0,76.0,24.0,71.0,8.0,,,,,,,,True
+270,Raimel Tapia,"Tapia, Raimel",271,OF,272.0,14350,532.0,149.0,75.0,9.0,53.0,19.0,,,,,,,,True
+271,Luke Voit,"Voit, Luke",272,1B,273.0,14811,506.0,127.0,78.0,29.0,86.0,1.0,,,,,,,,True
+272,Josiah Gray,"Gray, Josiah",273,P,275.0,24580,,,,,,,131.0,70.0,6.0,139.0,0.0,125.0,51.0,True
+273,Rowan Wick,"Wick, Rowan",274,P,275.33,14646,,,,,,,64.0,29.0,3.0,70.0,29.0,57.0,30.0,True
+274,Jake McGee,"McGee, Jake",275,P,276.33,7550,,,,,,,66.0,29.0,3.0,67.0,8.0,61.0,18.0,True
+275,Matt Barnes,"Barnes, Matt",276,P,276.83,12863,,,,,,,66.0,27.0,6.0,90.0,11.0,52.0,31.0,True
+276,Mike Yastrzemski,"Yastrzemski, Mike",277,OF,276.83,14854,507.0,122.0,72.0,23.0,71.0,4.0,,,,,,,,True
+277,Jesus Aguilar,"Aguilar, Jesus",278,1B,277.33,11342,457.0,118.0,60.0,22.0,79.0,0.0,,,,,,,,True
+278,Brandon Nimmo,"Nimmo, Brandon",279,OF,278.0,12927,480.0,124.0,79.0,16.0,52.0,8.0,,,,,,,,True
+279,Aaron Civale,"Civale, Aaron",280,P,280.33,19479,,,,,,,154.0,81.0,9.0,127.0,0.0,161.0,41.0,True
+280,Josh Jung,"Jung, Josh",281,3B,280.67,sa3011468,381.0,101.0,49.0,16.0,48.0,4.0,,,,,,,,True
+281,Cavan Biggio,"Biggio, Cavan",282,3B,282.33,19252,449.0,102.0,68.0,17.0,57.0,8.0,,,,,,,,True
+282,Gary Sanchez,"Sanchez, Gary",283,C,282.33,11442,347.0,72.0,50.0,21.0,58.0,0.0,,,,,,,,True
+283,Alec Bohm,"Bohm, Alec",284,3B,283.5,21618,499.0,131.0,62.0,16.0,64.0,6.0,,,,,,,,True
+284,Cal Quantrill,"Quantrill, Cal",285,P,284.17,19312,,,,,,,165.0,83.0,10.0,138.0,0.0,169.0,52.0,True
+285,Tylor Megill,"Megill, Tylor",286,P,285.0,21318,,,,,,,110.0,52.0,6.0,116.0,0.0,103.0,38.0,True
+286,J.P. Crawford,"Crawford, J.P.",287,SS,287.33,15491,591.0,153.0,80.0,12.0,58.0,7.0,,,,,,,,True
+287,Julio Rodriguez,"Rodriguez, Julio",288,OF,287.5,sa3005720,248.0,69.0,35.0,10.0,34.0,8.0,,,,,,,,True
+288,Max Stassi,"Stassi, Max",289,C,288.5,10059,369.0,82.0,48.0,15.0,48.0,1.0,,,,,,,,True
+289,Riley Greene,"Greene, Riley",290,OF,289.33,sa3010694,201.0,53.0,29.0,8.0,28.0,4.0,,,,,,,,True
+290,Mike Zunino,"Zunino, Mike",291,C,289.5,13265,305.0,61.0,43.0,20.0,50.0,1.0,,,,,,,,True
+291,Rowdy Tellez,"Tellez, Rowdy",292,1B,292.33,15679,433.0,112.0,61.0,23.0,68.0,1.0,,,,,,,,True
+292,Paul Sewald,"Sewald, Paul",293,P,293.17,13892,,,,,,,67.0,28.0,5.0,87.0,6.0,54.0,24.0,True
+293,Carson Kelly,"Kelly, Carson",294,C,294.33,13620,356.0,85.0,47.0,15.0,51.0,1.0,,,,,,,,True
+294,Ken Giles,"Giles, Ken",295,P,295.0,12910,,,,,,,54.0,22.0,3.0,65.0,8.0,46.0,18.0,True
+295,Danny Jansen,"Jansen, Danny",296,C,295.17,16535,349.0,82.0,52.0,18.0,54.0,1.0,,,,,,,,True
+296,Kyle Hendricks,"Hendricks, Kyle",297,P,295.5,12049,,,,,,,179.0,92.0,10.0,131.0,0.0,195.0,41.0,True
+297,Nick Madrigal,"Madrigal, Nick",298,2B,296.83,20521,515.0,153.0,63.0,6.0,51.0,13.0,,,,,,,,True
+298,Luis Arraez,"Arraez, Luis",299,"2B, 3B, OF",297.83,18568,559.0,168.0,77.0,5.0,52.0,4.0,,,,,,,,True
+299,Jameson Taillon,"Taillon, Jameson",300,P,300.5,11674,,,,,,,146.0,72.0,9.0,139.0,0.0,142.0,42.0,True
+300,Carlos Carrasco,"Carrasco, Carlos",301,P,301.67,6632,,,,,,,142.0,64.0,10.0,147.0,0.0,135.0,43.0,True
+301,Jesus Luzardo,"Luzardo, Jesus",302,P,301.83,19959,,,,,,,83.0,40.0,5.0,83.0,0.0,80.0,34.0,True
+302,Yadier Molina,"Molina, Yadier",303,C,303.33,7007,413.0,103.0,42.0,10.0,52.0,3.0,,,,,,,,True
+303,Jeff McNeil,"McNeil, Jeff",304,"2B, OF",304.5,15362,516.0,145.0,69.0,14.0,63.0,5.0,,,,,,,,True
+304,Yoshi Tsutsugo,"Tsutsugo, Yoshi",305,"1B, OF",304.83,27459,458.0,105.0,64.0,20.0,62.0,1.0,,,,,,,,True
+305,Cristian Javier,"Javier, Cristian",306,P,307.5,17606,,,,,,,79.0,37.0,3.0,100.0,0.0,64.0,38.0,True
+306,Devin Williams,"Williams, Devin",307,P,307.5,15816,,,,,,,65.0,22.0,6.0,96.0,2.0,46.0,31.0,True
+307,Connor Joe,"Joe, Connor",308,OF,309.0,16572,326.0,85.0,47.0,13.0,47.0,1.0,,,,,,,,True
+308,Rafael Ortega,"Ortega, Rafael",309,OF,309.0,10323,445.0,111.0,61.0,14.0,50.0,14.0,,,,,,,,True
+309,Eric Lauer,"Lauer, Eric",310,P,310.17,19316,,,,,,,95.0,48.0,5.0,92.0,0.0,92.0,36.0,True
+310,Luis Patino,"Patino, Luis",311,P,310.5,22815,,,,,,,98.0,47.0,6.0,103.0,0.0,89.0,40.0,True
+311,Tyler Naquin,"Naquin, Tyler",312,OF,311.83,13359,481.0,125.0,60.0,19.0,71.0,5.0,,,,,,,,True
+312,Stephen Strasburg,"Strasburg, Stephen",313,P,312.33,10131,,,,,,,151.0,69.0,10.0,156.0,0.0,141.0,51.0,True
+313,Cesar Hernandez,"Hernandez, Cesar",314,2B,313.83,10556,486.0,123.0,68.0,14.0,56.0,3.0,,,,,,,,True
+314,Miguel Rojas,"Rojas, Miguel",315,SS,314.0,7802,511.0,136.0,63.0,9.0,50.0,12.0,,,,,,,,True
+315,Ian Kennedy,"Kennedy, Ian",316,P,315.0,6986,,,,,,,62.0,31.0,3.0,68.0,0.0,58.0,21.0,True
+316,LaMonte Wade Jr.,"Wade Jr., LaMonte",317,"1B, OF",316.17,18126,500.0,121.0,71.0,20.0,68.0,8.0,,,,,,,,True
+317,Kyle Lewis,"Lewis, Kyle",318,OF,316.33,19508,482.0,115.0,60.0,18.0,61.0,5.0,,,,,,,,True
+318,David Fletcher,"Fletcher, David",319,"2B, SS",317.83,17992,602.0,166.0,76.0,6.0,50.0,12.0,,,,,,,,True
+319,Joey Bart,"Bart, Joey",320,C,318.33,21524,348.0,82.0,42.0,10.0,39.0,2.0,,,,,,,,True
+320,Manuel Margot,"Margot, Manuel",321,OF,318.5,14712,450.0,114.0,59.0,12.0,56.0,16.0,,,,,,,,True
+321,Brandon Marsh,"Marsh, Brandon",322,OF,319.67,20202,464.0,114.0,53.0,10.0,44.0,10.0,,,,,,,,True
+322,Trevor Bauer,"Bauer, Trevor",323,P,321.17,12703,,,,,,,128.0,53.0,9.0,153.0,0.0,106.0,43.0,True
+323,Michael Fulmer,"Fulmer, Michael",324,P,322.83,13218,,,,,,,65.0,29.0,4.0,63.0,7.0,63.0,21.0,True
+324,Yusei Kikuchi,"Kikuchi, Yusei",325,P,324.33,20633,,,,,,,149.0,70.0,9.0,143.0,0.0,145.0,52.0,True
+325,James McCann,"McCann, James",326,C,325.33,12859,367.0,85.0,39.0,11.0,45.0,3.0,,,,,,,,True
+326,Eric Hosmer,"Hosmer, Eric",327,1B,325.5,3516,507.0,133.0,61.0,16.0,71.0,5.0,,,,,,,,True
+327,Marco Gonzales,"Gonzales, Marco",328,P,326.0,15467,,,,,,,181.0,90.0,10.0,141.0,0.0,183.0,49.0,True
+328,Tony Gonsolin,"Gonsolin, Tony",329,P,329.33,19388,,,,,,,124.0,65.0,7.0,127.0,0.0,117.0,54.0,True
+329,Adam Frazier,"Frazier, Adam",330,2B,329.83,15223,518.0,138.0,68.0,9.0,46.0,7.0,,,,,,,,True
+330,Elieser Hernandez,"Hernandez, Elieser",331,P,330.17,16933,,,,,,,122.0,62.0,6.0,122.0,0.0,117.0,37.0,True
+331,Eric Haase,"Haase, Eric",332,"C, OF",330.33,14111,262.0,57.0,33.0,12.0,39.0,1.0,,,,,,,,True
+332,Nick Pivetta,"Pivetta, Nick",333,P,332.83,15454,,,,,,,141.0,74.0,8.0,146.0,0.0,135.0,57.0,True
+333,Patrick Wisdom,"Wisdom, Patrick",334,3B,333.67,13602,520.0,113.0,74.0,35.0,88.0,7.0,,,,,,,,True
+334,Hunter Dozier,"Dozier, Hunter",335,"3B, OF",333.83,15117,451.0,106.0,56.0,17.0,57.0,5.0,,,,,,,,True
+335,Vidal Brujan,"Brujan, Vidal",336,OF,334.83,20536,153.0,36.0,20.0,3.0,17.0,12.0,,,,,,,,True
+336,Zach Plesac,"Plesac, Zach",337,P,335.5,19979,,,,,,,164.0,85.0,9.0,130.0,0.0,171.0,44.0,True
+337,Adbert Alzolay,"Alzolay, Adbert",338,P,336.33,17859,,,,,,,95.0,48.0,6.0,97.0,0.0,91.0,34.0,True
+338,Andrew McCutchen,"McCutchen, Andrew",339,OF,339.17,9847,489.0,114.0,75.0,23.0,72.0,7.0,,,,,,,,True
+339,Jose Barrero,"Barrero, Jose",340,SS,342.83,23378,146.0,37.0,19.0,5.0,20.0,4.0,,,,,,,,True
+340,Ha-Seong Kim,"Kim, Ha-Seong",341,"2B, 3B, SS",343.67,27506,344.0,83.0,46.0,12.0,48.0,9.0,,,,,,,,True
+341,Joey Wendle,"Wendle, Joey",342,"3B, SS",344.67,13853,397.0,104.0,50.0,8.0,42.0,8.0,,,,,,,,True
+342,Randal Grichuk,"Grichuk, Randal",343,OF,345.17,10243,474.0,117.0,63.0,24.0,75.0,2.0,,,,,,,,True
+343,Mike Moustakas,"Moustakas, Mike",344,3B,348.0,4892,438.0,107.0,57.0,22.0,71.0,2.0,,,,,,,,True
+344,Tanner Rainey,"Rainey, Tanner",345,P,350.17,17610,,,,,,,65.0,33.0,4.0,89.0,7.0,52.0,43.0,True
+345,Lorenzo Cain,"Cain, Lorenzo",346,OF,351.0,9077,475.0,126.0,62.0,12.0,50.0,16.0,,,,,,,,True
+346,James Kaprielian,"Kaprielian, James",347,P,353.0,18331,,,,,,,105.0,53.0,6.0,104.0,0.0,100.0,38.0,True
+347,Pavin Smith,"Smith, Pavin",348,"1B, OF",353.33,19892,435.0,115.0,56.0,11.0,48.0,2.0,,,,,,,,True
+348,Evan Longoria,"Longoria, Evan",349,3B,354.33,9368,466.0,114.0,61.0,18.0,67.0,3.0,,,,,,,,True
+349,Yan Gomes,"Gomes, Yan",350,C,354.83,9627,260.0,64.0,32.0,10.0,36.0,1.0,,,,,,,,True
+350,Corey Kluber,"Kluber, Corey",351,P,355.17,2429,,,,,,,142.0,64.0,9.0,137.0,0.0,134.0,46.0,True
+351,Dominic Smith,"Smith, Dominic",352,OF,355.33,15653,374.0,95.0,46.0,13.0,54.0,2.0,,,,,,,,True
+352,Nestor Cortes,"Cortes, Nestor",353,P,356.33,17874,,,,,,,110.0,55.0,5.0,116.0,0.0,105.0,36.0,True
+353,Jacob Stallings,"Stallings, Jacob",354,C,357.67,13723,381.0,94.0,42.0,8.0,44.0,1.0,,,,,,,,True
+354,Nick Solak,"Solak, Nick",355,2B,357.83,19294,390.0,101.0,51.0,11.0,48.0,6.0,,,,,,,,True
+355,Yandy Diaz,"Diaz, Yandy",356,"1B, 3B",359.0,16578,482.0,130.0,68.0,13.0,62.0,2.0,,,,,,,,True
+356,Austin Nola,"Nola, Austin",357,C,362.17,15941,315.0,82.0,39.0,8.0,40.0,1.0,,,,,,,,True
+357,Zack Greinke,"Greinke, Zack",358,P,362.83,1943,,,,,,,159.0,76.0,9.0,126.0,0.0,163.0,36.0,True
+358,Taijuan Walker,"Walker, Taijuan",359,P,363.0,11836,,,,,,,160.0,80.0,9.0,149.0,0.0,155.0,57.0,True
+359,Tony Kemp,"Kemp, Tony",360,"2B, OF",363.67,14894,478.0,124.0,67.0,10.0,52.0,11.0,,,,,,,,True
+360,Josh Lowe,"Lowe, Josh",361,OF,367.0,19953,62.0,15.0,9.0,2.0,8.0,2.0,,,,,,,,True
+361,Jarren Duran,"Duran, Jarren",362,OF,367.0,24617,455.0,115.0,58.0,13.0,49.0,19.0,,,,,,,,True
+362,Tyler Wells,"Wells, Tyler",363,P,367.33,20000,,,,,,,64.0,32.0,3.0,72.0,21.0,58.0,20.0,True
+363,Chris Flexen,"Flexen, Chris",364,P,368.0,13896,,,,,,,144.0,70.0,8.0,116.0,0.0,148.0,40.0,True
+364,Brian Anderson,"Anderson, Brian",365,3B,369.17,18289,455.0,112.0,56.0,16.0,59.0,5.0,,,,,,,,True
+365,Chris Paddack,"Paddack, Chris",366,P,370.83,20099,,,,,,,61.0,28.0,4.0,60.0,0.0,58.0,14.0,True
+366,Wilmer Flores,"Flores, Wilmer",367,"1B, 2B, 3B",373.67,5827,380.0,102.0,51.0,15.0,53.0,1.0,,,,,,,,True
+367,Willie Calhoun,"Calhoun, Willie",368,OF,374.5,17838,483.0,126.0,64.0,20.0,63.0,2.0,,,,,,,,True
+368,Isiah Kiner-Falefa,"Kiner-Falefa, Isiah",369,SS,374.5,16512,305.0,83.0,37.0,5.0,26.0,9.0,,,,,,,,True
+369,Brady Singer,"Singer, Brady",370,P,375.17,25377,,,,,,,141.0,66.0,9.0,130.0,0.0,142.0,53.0,True
+370,Alex Reyes,"Reyes, Alex",371,P,375.33,15015,,,,,,,68.0,30.0,6.0,87.0,9.0,52.0,40.0,True
+371,Luis Torrens,"Torrens, Luis",372,C,376.5,15905,219.0,52.0,25.0,8.0,29.0,0.0,,,,,,,,True
+372,Victor Robles,"Robles, Victor",373,OF,378.33,18363,442.0,105.0,58.0,10.0,46.0,16.0,,,,,,,,True
+373,Michael A. Taylor,"Taylor, Michael A.",374,OF,378.33,11489,493.0,116.0,57.0,14.0,54.0,14.0,,,,,,,,True
+374,Dane Dunning,"Dunning, Dane",375,P,378.33,19409,,,,,,,141.0,67.0,9.0,128.0,0.0,142.0,50.0,True
+375,Chas McCormick,"McCormick, Chas",376,OF,379.0,19599,267.0,64.0,35.0,10.0,36.0,5.0,,,,,,,,True
+376,Josh Harrison,"Harrison, Josh",377,"2B, 3B, OF",380.83,8202,465.0,121.0,54.0,8.0,51.0,8.0,,,,,,,,True
+377,Jorge Alcala,"Alcala, Jorge",378,P,381.17,19459,,,,,,,62.0,29.0,4.0,66.0,4.0,58.0,23.0,True
+378,Kyle Gibson,"Gibson, Kyle",379,P,381.33,10123,,,,,,,188.0,96.0,11.0,162.0,0.0,190.0,72.0,True
+379,Jose Miranda,"Miranda, Jose",380,3B,382.5,sa917952,407.0,113.0,56.0,15.0,57.0,2.0,,,,,,,,True
+380,Diego Castillo,"Castillo, Diego",381,P,383.33,17496,,,,,,,65.0,29.0,4.0,69.0,4.0,57.0,29.0,True
+381,Sixto Sanchez,"Sanchez, Sixto",382,P,383.5,19680,,,,,,,91.0,38.0,6.0,78.0,0.0,88.0,25.0,True
+382,Nico Hoerner,"Hoerner, Nico",383,2B,384.83,21479,509.0,141.0,61.0,7.0,56.0,12.0,,,,,,,,True
+383,Carlos Hernandez,"Hernandez, Carlos",384,P,385.33,22713,,,,,,,116.0,62.0,6.0,103.0,0.0,115.0,52.0,True
+384,Tyrone Taylor,"Taylor, Tyrone",385,OF,385.33,13675,430.0,104.0,57.0,18.0,63.0,8.0,,,,,,,,True
+385,Jorge Alfaro,"Alfaro, Jorge",386,"C, OF",385.33,12180,411.0,99.0,42.0,12.0,50.0,8.0,,,,,,,,True
+386,Pierce Johnson,"Johnson, Pierce",387,P,388.67,13435,,,,,,,64.0,27.0,4.0,77.0,15.0,53.0,28.0,True
+387,Jonathan Loaisiga,"Loaisiga, Jonathan",388,P,388.83,19753,,,,,,,66.0,25.0,5.0,73.0,2.0,57.0,21.0,True
+388,Jorge Mateo,"Mateo, Jorge",389,OF,389.33,17273,341.0,81.0,38.0,8.0,34.0,13.0,,,,,,,,True
+389,Kyle Finnegan,"Finnegan, Kyle",390,P,389.33,15009,,,,,,,66.0,31.0,5.0,69.0,28.0,62.0,30.0,True
+390,Chad Green,"Green, Chad",391,P,390.5,15552,,,,,,,63.0,25.0,6.0,79.0,1.0,52.0,18.0,True
+391,Drew Steckenrider,"Steckenrider, Drew",392,P,390.67,18806,,,,,,,66.0,32.0,3.0,62.0,15.0,62.0,22.0,True
+392,Anthony Bender,"Bender, Anthony",393,P,391.0,19742,,,,,,,63.0,26.0,3.0,68.0,10.0,55.0,26.0,True
+393,Clint Frazier,"Frazier, Clint",394,OF,392.83,15983,349.0,82.0,46.0,14.0,46.0,4.0,,,,,,,,True
+394,Sam Hilliard,"Hilliard, Sam",395,OF,393.67,17954,397.0,91.0,55.0,20.0,57.0,10.0,,,,,,,,True
+395,Tucker Barnhart,"Barnhart, Tucker",396,C,394.17,10200,330.0,75.0,34.0,7.0,34.0,1.0,,,,,,,,True
+396,Christian Walker,"Walker, Christian",397,1B,394.17,13419,445.0,110.0,61.0,17.0,61.0,2.0,,,,,,,,True
+397,Ramon Urias,"Urias, Ramon",398,"2B, SS",396.33,18795,450.0,113.0,55.0,14.0,55.0,3.0,,,,,,,,True
+398,Paul DeJong,"DeJong, Paul",399,SS,397.5,18015,433.0,99.0,59.0,20.0,62.0,5.0,,,,,,,,True
+399,Nick Senzel,"Senzel, Nick",400,OF,399.17,19293,202.0,52.0,28.0,6.0,23.0,6.0,,,,,,,,True
+400,Edmundo Sosa,"Sosa, Edmundo",401,"2B, SS",399.17,17022,389.0,99.0,47.0,9.0,42.0,5.0,,,,,,,,True
+401,MJ Melendez,"Melendez, MJ",402,C,401.83,sa3004139,106.0,27.0,15.0,6.0,16.0,1.0,,,,,,,,True
+402,Reid Detmers,"Detmers, Reid",403,P,402.0,27468,,,,,,,79.0,38.0,5.0,86.0,0.0,74.0,31.0,True
+403,Dakota Hudson,"Hudson, Dakota",404,P,403.33,19206,,,,,,,111.0,54.0,7.0,80.0,0.0,111.0,47.0,True
+404,Bryan De La Cruz,"De La Cruz, Bryan",405,OF,405.0,19600,479.0,128.0,57.0,13.0,54.0,4.0,,,,,,,,True
+405,Domingo German,"German, Domingo",406,P,405.17,17149,,,,,,,90.0,43.0,6.0,96.0,0.0,84.0,27.0,True
+406,Michael Pineda,"Pineda, Michael",407,P,407.17,5372,,,,,,,159.0,81.0,10.0,129.0,0.0,170.0,36.0,True
+407,Bobby Bradley,"Bradley, Bobby",408,1B,408.17,17278,463.0,99.0,61.0,28.0,73.0,1.0,,,,,,,,True
+408,Carlos Estevez,"Estevez, Carlos",409,P,410.33,14542,,,,,,,63.0,35.0,3.0,63.0,19.0,67.0,23.0,True
+409,Francisco Mejia,"Mejia, Francisco",410,C,410.5,16403,239.0,60.0,29.0,7.0,30.0,1.0,,,,,,,,True
+410,Keston Hiura,"Hiura, Keston",411,1B,411.17,20003,274.0,63.0,36.0,12.0,37.0,4.0,,,,,,,,True
+411,Patrick Corbin,"Corbin, Patrick",412,P,413.33,9323,,,,,,,172.0,83.0,11.0,161.0,0.0,175.0,55.0,True
+412,Hunter Greene,"Greene, Hunter",413,P,413.5,sa3005315,,,,,,,103.0,53.0,8.0,106.0,0.0,100.0,40.0,True
+413,J.D. Davis,"Davis, J.D.",414,3B,413.5,16219,276.0,70.0,36.0,10.0,36.0,2.0,,,,,,,,True
+414,Didi Gregorius,"Gregorius, Didi",415,SS,413.67,6012,561.0,138.0,72.0,23.0,86.0,4.0,,,,,,,,True
+415,Luke Weaver,"Weaver, Luke",416,P,418.33,16918,,,,,,,133.0,70.0,8.0,128.0,0.0,135.0,43.0,True
+416,Jeremy Pena,"Pena, Jeremy",417,SS,418.83,sa876320,463.0,116.0,51.0,18.0,54.0,10.0,,,,,,,,True
+417,Dylan Bundy,"Bundy, Dylan",418,P,420.0,12917,,,,,,,157.0,83.0,10.0,149.0,0.0,158.0,54.0,True
+418,Tyler Wade,"Wade, Tyler",419,"3B, SS, OF",420.83,15730,287.0,66.0,38.0,4.0,25.0,18.0,,,,,,,,True
+419,Jonah Heim,"Heim, Jonah",420,C,420.83,16930,287.0,70.0,32.0,8.0,33.0,2.0,,,,,,,,True
+420,Darin Ruf,"Ruf, Darin",421,"1B, OF",421.83,9929,330.0,80.0,44.0,15.0,47.0,2.0,,,,,,,,True
+421,Rougned Odor,"Odor, Rougned",422,"2B, 3B",422.5,12282,363.0,77.0,49.0,19.0,54.0,3.0,,,,,,,,True
+422,Roansy Contreras,"Contreras, Roansy",423,P,422.83,22810,,,,,,,57.0,27.0,3.0,53.0,0.0,56.0,20.0,True
+423,Adrian Houser,"Houser, Adrian",424,P,424.17,12718,,,,,,,130.0,66.0,8.0,99.0,0.0,133.0,54.0,True
+424,Dinelson Lamet,"Lamet, Dinelson",425,P,426.0,17186,,,,,,,52.0,21.0,3.0,65.0,8.0,43.0,20.0,True
+425,Carlos Santana,"Santana, Carlos",426,1B,426.33,2396,363.0,85.0,50.0,14.0,48.0,1.0,,,,,,,,True
+426,Bryson Stott,"Stott, Bryson",427,SS,426.33,sa3011443,288.0,72.0,36.0,9.0,33.0,5.0,,,,,,,,True
+427,Joc Pederson,"Pederson, Joc",428,OF,428.0,11899,470.0,112.0,70.0,25.0,75.0,3.0,,,,,,,,True
+428,Garrett Cooper,"Cooper, Garrett",429,OF,428.17,15279,438.0,115.0,59.0,17.0,61.0,2.0,,,,,,,,True
+429,David Peralta,"Peralta, David",430,OF,431.0,2136,470.0,127.0,56.0,13.0,63.0,2.0,,,,,,,,True
+430,Josh Staumont,"Staumont, Josh",431,P,432.67,18335,,,,,,,64.0,29.0,4.0,74.0,5.0,54.0,34.0,True
+431,Seth Brown,"Brown, Seth",432,OF,432.67,18171,499.0,114.0,65.0,24.0,75.0,6.0,,,,,,,,True
+432,Mike Minor,"Minor, Mike",433,P,433.5,10021,,,,,,,170.0,84.0,10.0,153.0,0.0,168.0,49.0,True
+433,Robert Suarez,"Suarez, Robert",434,P,433.5,sa869798,,,,,,,58.0,22.0,2.0,61.0,0.0,51.0,18.0,True
+434,Dylan Moore,"Moore, Dylan",435,"2B, OF",433.83,18042,326.0,68.0,41.0,11.0,40.0,18.0,,,,,,,,True
+435,James Karinchak,"Karinchak, James",436,P,435.5,20151,,,,,,,66.0,24.0,6.0,98.0,2.0,47.0,33.0,True
+436,Luis Garcia,"Garcia, Luis",437,2B,436.5,20391,393.0,106.0,49.0,13.0,51.0,3.0,,,,,,,,True
+437,Wade Miley,"Miley, Wade",438,P,436.5,8779,,,,,,,163.0,79.0,10.0,120.0,0.0,172.0,56.0,True
+438,Ryan Jeffers,"Jeffers, Ryan",439,C,437.0,24618,166.0,36.0,20.0,7.0,22.0,0.0,,,,,,,,True
+439,Michael Wacha,"Wacha, Michael",440,P,438.5,14078,,,,,,,109.0,60.0,6.0,97.0,0.0,118.0,33.0,True
+440,Bradley Zimmer,"Zimmer, Bradley",441,OF,439.67,16221,298.0,66.0,41.0,8.0,33.0,12.0,,,,,,,,True
+441,Carter Kieboom,"Kieboom, Carter",442,3B,440.17,19958,474.0,115.0,66.0,16.0,61.0,2.0,,,,,,,,True
+442,Alex Colome,"Colome, Alex",443,P,441.33,6661,,,,,,,68.0,31.0,4.0,61.0,0.0,66.0,25.0,True
+443,Miles Mikolas,"Mikolas, Miles",444,P,442.0,9803,,,,,,,141.0,67.0,9.0,100.0,0.0,148.0,31.0,True
+444,Kole Calhoun,"Calhoun, Kole",445,OF,442.83,11200,401.0,92.0,57.0,19.0,54.0,3.0,,,,,,,,True
+445,Gavin Sheets,"Sheets, Gavin",446,UT,443.0,19901,431.0,110.0,59.0,22.0,71.0,2.0,,,,,,,,True
+446,Rich Hill,"Hill, Rich",447,P,445.67,4806,,,,,,,100.0,56.0,5.0,87.0,0.0,103.0,36.0,True
+447,Nick Gordon,"Gordon, Nick",448,OF,450.67,16337,181.0,46.0,21.0,4.0,20.0,8.0,,,,,,,,True
+448,Leury Garcia,"Garcia, Leury",449,"2B, OF",452.0,5913,440.0,114.0,55.0,8.0,46.0,7.0,,,,,,,,True
+449,Kyle Isbel,"Isbel, Kyle",450,OF,452.83,21614,393.0,99.0,53.0,11.0,45.0,13.0,,,,,,,,True
+450,JT Brubaker,"Brubaker, JT",451,P,454.17,17578,,,,,,,133.0,66.0,8.0,125.0,0.0,132.0,45.0,True
+451,Zach Eflin,"Eflin, Zach",452,P,456.67,13774,,,,,,,129.0,62.0,8.0,113.0,0.0,133.0,32.0,True
+452,Madison Bumgarner,"Bumgarner, Madison",453,P,458.0,5524,,,,,,,177.0,99.0,9.0,145.0,0.0,187.0,49.0,True
+453,Art Warren,"Warren, Art",454,P,458.0,18251,,,,,,,54.0,22.0,4.0,70.0,0.0,43.0,23.0,True
+454,Merrill Kelly,"Kelly, Merrill",455,P,458.33,11156,,,,,,,171.0,92.0,10.0,137.0,0.0,184.0,52.0,True
+455,Miguel Cabrera,"Cabrera, Miguel",456,1B,459.67,1744,474.0,119.0,52.0,16.0,67.0,0.0,,,,,,,,True
+456,Pedro Severino,"Severino, Pedro",457,C,459.83,14523,224.0,52.0,24.0,7.0,28.0,1.0,,,,,,,,True
+457,Aaron Hicks,"Hicks, Aaron",458,OF,459.83,5297,459.0,105.0,72.0,19.0,67.0,6.0,,,,,,,,True
+458,Kris Bubic,"Bubic, Kris",459,P,461.33,21455,,,,,,,108.0,55.0,6.0,95.0,0.0,106.0,47.0,True
+459,Jurickson Profar,"Profar, Jurickson",460,"1B, OF",461.5,10815,434.0,105.0,59.0,12.0,52.0,11.0,,,,,,,,True
+460,Nick Martinez,"Martinez, Nick",461,P,465.33,12730,,,,,,,136.0,57.0,9.0,134.0,0.0,123.0,46.0,True
+461,Nate Pearson,"Pearson, Nate",462,P,467.33,20160,,,,,,,76.0,38.0,5.0,85.0,0.0,69.0,35.0,True
+462,Nolan Gorman,"Gorman, Nolan",463,2B,467.33,sa3007017,117.0,30.0,14.0,5.0,15.0,1.0,,,,,,,,True
+463,Chris Stratton,"Stratton, Chris",464,P,467.83,13761,,,,,,,68.0,34.0,4.0,67.0,8.0,66.0,27.0,True
+464,Edward Cabrera,"Cabrera, Edward",465,P,467.83,21690,,,,,,,40.0,18.0,2.0,44.0,0.0,35.0,19.0,True
+465,Jake Odorizzi,"Odorizzi, Jake",466,P,467.83,6397,,,,,,,72.0,34.0,5.0,71.0,0.0,68.0,22.0,True
+466,Anthony Alford,"Alford, Anthony",467,OF,468.83,14329,382.0,87.0,49.0,12.0,48.0,15.0,,,,,,,,True
+467,Kyle Farmer,"Farmer, Kyle",468,SS,469.5,14813,493.0,125.0,57.0,14.0,61.0,4.0,,,,,,,,True
+468,Gabriel Moreno,"Moreno, Gabriel",469,C,470.17,,,,,,,,,,,,,,,True
+469,Grayson Rodriguez,"Rodriguez, Grayson",470,P,471.17,sa3008130,,,,,,,63.0,32.0,4.0,63.0,0.0,60.0,24.0,True
+470,Santiago Espinal,"Espinal, Santiago",471,3B,471.17,19997,485.0,126.0,58.0,7.0,47.0,9.0,,,,,,,,True
+471,Cole Sulser,"Sulser, Cole",472,P,471.5,15256,,,,,,,66.0,30.0,4.0,73.0,6.0,58.0,26.0,True
+472,Nick Pratto,"Pratto, Nick",473,1B,472.17,sa3004138,203.0,50.0,29.0,11.0,30.0,4.0,,,,,,,,True
+473,Trevor Rosenthal,"Rosenthal, Trevor",474,P,472.5,10745,,,,,,,59.0,25.0,3.0,77.0,0.0,47.0,35.0,True
+474,Juan Yepez,"Yepez, Juan",475,1B,474.33,sa877505,281.0,71.0,40.0,14.0,44.0,2.0,,,,,,,,True
+475,Triston Casas,"Casas, Triston",476,1B,479.17,sa3007634,241.0,61.0,36.0,10.0,33.0,3.0,,,,,,,,True
+476,Leody Taveras,"Taveras, Leody",477,OF,480.17,18900,176.0,40.0,23.0,5.0,19.0,7.0,,,,,,,,True
+477,Tommy La Stella,"La Stella, Tommy",478,2B,480.67,12371,460.0,124.0,64.0,12.0,52.0,2.0,,,,,,,,True
+478,Zach Thompson,"Thompson, Zach",479,P,481.67,16094,,,,,,,119.0,61.0,7.0,101.0,0.0,121.0,43.0,True
+479,Jose Siri,"Siri, Jose",480,OF,482.33,17452,213.0,49.0,27.0,7.0,28.0,9.0,,,,,,,,True
+480,Willi Castro,"Castro, Willi",481,"2B, SS",483.67,17338,64.0,16.0,8.0,2.0,7.0,1.0,,,,,,,,True
+481,Ryan Yarbrough,"Yarbrough, Ryan",482,P,484.33,16502,,,,,,,119.0,59.0,7.0,86.0,0.0,124.0,28.0,True
+482,Codi Heuer,"Heuer, Codi",483,P,485.0,23293,,,,,,,68.0,31.0,5.0,62.0,4.0,66.0,24.0,True
+483,Robinson Cano,"Cano, Robinson",484,2B,485.0,3269,445.0,115.0,51.0,13.0,55.0,1.0,,,,,,,,True
+484,Nick Ahmed,"Ahmed, Nick",485,SS,485.5,12147,457.0,110.0,55.0,10.0,52.0,7.0,,,,,,,,True
+485,Brad Boxberger,"Boxberger, Brad",486,P,488.0,10133,,,,,,,65.0,32.0,4.0,77.0,0.0,56.0,32.0,True
+486,Max Meyer,"Meyer, Max",487,P,488.17,sa3014430,,,,,,,25.0,12.0,1.0,22.0,0.0,25.0,11.0,True
+487,Reiver Sanmartin,"Sanmartin, Reiver",488,P,489.17,19754,,,,,,,72.0,36.0,5.0,63.0,0.0,75.0,23.0,True
+488,Pete Fairbanks,"Fairbanks, Pete",489,P,490.17,17998,,,,,,,64.0,24.0,6.0,82.0,9.0,52.0,26.0,True
+489,Luis Gil,"Gil, Luis",490,P,493.5,21052,,,,,,,63.0,32.0,3.0,73.0,0.0,55.0,34.0,True
+490,Roberto Perez,"Perez, Roberto",491,C,494.5,2900,381.0,78.0,41.0,14.0,46.0,2.0,,,,,,,,True
+491,Tom Murphy,"Murphy, Tom",492,C,496.67,13499,227.0,49.0,27.0,10.0,30.0,1.0,,,,,,,,True
+492,Steven Kwan,"Kwan, Steven",493,OF,497.0,sa3008536,337.0,96.0,45.0,9.0,39.0,5.0,,,,,,,,True
+493,Jose Suarez,"Suarez, Jose",494,P,498.17,19911,,,,,,,114.0,58.0,8.0,103.0,0.0,113.0,44.0,True
+494,Mitch Keller,"Keller, Mitch",495,P,500.33,17594,,,,,,,108.0,57.0,6.0,98.0,0.0,113.0,47.0,True
+495,Tyler Beede,"Beede, Tyler",496,P,500.83,16981,,,,,,,60.0,35.0,3.0,55.0,0.0,61.0,34.0,True
+496,Brad Hand,"Hand, Brad",497,P,501.0,9111,,,,,,,67.0,30.0,5.0,73.0,0.0,60.0,26.0,True
+497,Matt Manning,"Manning, Matt",498,P,502.83,20369,,,,,,,131.0,69.0,7.0,100.0,0.0,139.0,46.0,True
+498,Elvis Andrus,"Andrus, Elvis",499,SS,504.5,8709,450.0,113.0,53.0,7.0,42.0,11.0,,,,,,,,True
+499,Jake Meyers,"Meyers, Jake",500,OF,506.0,20308,418.0,103.0,54.0,15.0,56.0,9.0,,,,,,,,True
+500,Michael Chavis,"Chavis, Michael",501,2B,506.5,17321,424.0,103.0,54.0,19.0,59.0,4.0,,,,,,,,True
+501,Trevor Larnach,"Larnach, Trevor",502,OF,506.67,21501,347.0,79.0,41.0,12.0,41.0,2.0,,,,,,,,True
+502,Hector Neris,"Neris, Hector",503,P,507.67,11804,,,,,,,72.0,31.0,5.0,90.0,3.0,59.0,30.0,True
+503,Edwin Rios,"Rios, Edwin",504,1B,509.33,18316,69.0,15.0,9.0,4.0,11.0,0.0,,,,,,,,True
+504,Matt Vierling,"Vierling, Matt",505,OF,509.67,21558,475.0,119.0,59.0,15.0,56.0,10.0,,,,,,,,True
+505,Aledmys Diaz,"Diaz, Aledmys",506,3B,512.17,15937,292.0,74.0,35.0,9.0,41.0,1.0,,,,,,,,True
+506,Chad Pinder,"Pinder, Chad",507,OF,515.0,15191,477.0,117.0,63.0,18.0,64.0,2.0,,,,,,,,True
+507,Cole Irvin,"Irvin, Cole",508,P,515.17,19244,,,,,,,141.0,73.0,8.0,100.0,0.0,151.0,36.0,True
+508,Andy Ibanez,"Ibanez, Andy",509,2B,519.0,18819,308.0,82.0,40.0,10.0,37.0,2.0,,,,,,,,True
+509,Tyler Anderson,"Anderson, Tyler",510,P,519.5,12880,,,,,,,182.0,97.0,9.0,152.0,0.0,188.0,51.0,True
+510,Jordan Hicks,"Hicks, Jordan",511,P,519.83,19618,,,,,,,57.0,24.0,2.0,63.0,3.0,47.0,32.0,True
+511,Harold Ramirez,"Ramirez, Harold",512,OF,520.5,14387,203.0,56.0,24.0,6.0,26.0,2.0,,,,,,,,True
+512,Nick Lodolo,"Lodolo, Nick",513,P,520.5,sa917947,,,,,,,32.0,15.0,2.0,33.0,0.0,30.0,10.0,True
+513,Michael Lorenzen,"Lorenzen, Michael",514,P,521.17,14843,,,,,,,98.0,48.0,4.0,87.0,0.0,96.0,41.0,True
+514,Brad Miller,"Miller, Brad",515,"1B, OF",522.0,12775,349.0,81.0,50.0,18.0,54.0,3.0,,,,,,,,True
+515,Spencer Howard,"Howard, Spencer",516,P,522.5,23252,,,,,,,101.0,53.0,6.0,99.0,0.0,99.0,41.0,True
+516,Ji-Man Choi,"Choi, Ji-Man",517,1B,524.17,5452,396.0,92.0,54.0,16.0,57.0,1.0,,,,,,,,True
+517,Jace Peterson,"Peterson, Jace",518,"1B, 2B, OF",524.17,12325,170.0,41.0,22.0,5.0,21.0,5.0,,,,,,,,True
+518,Manny Pina,"Pina, Manny",519,C,524.33,2829,269.0,61.0,33.0,12.0,41.0,1.0,,,,,,,,True
+519,David Peterson,"Peterson, David",520,P,525.33,20302,,,,,,,65.0,30.0,4.0,60.0,0.0,62.0,27.0,True
+520,A.J. Puk,"Puk, A.J.",521,P,526.33,19343,,,,,,,73.0,32.0,5.0,74.0,5.0,68.0,30.0,True
+521,Daniel Lynch,"Lynch, Daniel",522,P,527.5,21537,,,,,,,66.0,36.0,4.0,53.0,0.0,70.0,26.0,True
+522,Lewin Diaz,"Diaz, Lewin",523,1B,528.67,18365,317.0,76.0,39.0,16.0,44.0,1.0,,,,,,,,True
+523,Ross Stripling,"Stripling, Ross",524,P,530.0,13273,,,,,,,80.0,42.0,5.0,73.0,0.0,82.0,24.0,True
+524,Austin Gomber,"Gomber, Austin",525,P,531.83,16561,,,,,,,137.0,78.0,9.0,131.0,0.0,146.0,53.0,True
+525,Austin Slater,"Slater, Austin",526,OF,535.33,16153,282.0,70.0,39.0,9.0,34.0,11.0,,,,,,,,True
+526,Collin McHugh,"McHugh, Collin",527,P,536.67,7531,,,,,,,63.0,26.0,4.0,70.0,0.0,55.0,20.0,True
+527,Niko Goodrum,"Goodrum, Niko",528,SS,538.0,12092,219.0,48.0,27.0,6.0,24.0,8.0,,,,,,,,True
+528,Martin Maldonado,"Maldonado, Martin",529,C,538.0,6887,400.0,78.0,47.0,13.0,46.0,1.0,,,,,,,,True
+529,Daniel Hudson,"Hudson, Daniel",530,P,538.5,7146,,,,,,,61.0,27.0,4.0,73.0,4.0,52.0,23.0,True
+530,Garrett Crochet,"Crochet, Garrett",531,P,539.83,27463,,,,,,,69.0,27.0,5.0,86.0,0.0,55.0,31.0,True
+531,Erick Fedde,"Fedde, Erick",532,P,540.0,17425,,,,,,,106.0,58.0,6.0,87.0,0.0,113.0,40.0,True
+532,Kyle Muller,"Muller, Kyle",533,P,541.5,20167,,,,,,,40.0,21.0,3.0,41.0,0.0,38.0,22.0,True
+533,Kendall Graveman,"Graveman, Kendall",534,P,541.83,15514,,,,,,,62.0,26.0,4.0,65.0,1.0,55.0,24.0,True
+534,Richard Rodriguez,"Rodriguez, Richard",535,P,542.67,13549,,,,,,,65.0,33.0,4.0,60.0,0.0,64.0,18.0,True
+535,Alek Thomas,"Thomas, Alek",536,OF,542.67,sa3006892,152.0,40.0,20.0,4.0,18.0,4.0,,,,,,,,True
+536,Edward Olivares,"Olivares, Edward",537,OF,543.0,19698,115.0,30.0,14.0,4.0,14.0,3.0,,,,,,,,True
+537,Jose Quintana,"Quintana, Jose",538,P,543.5,11423,,,,,,,133.0,66.0,7.0,125.0,0.0,134.0,51.0,True
+538,Taylor Walls,"Walls, Taylor",539,SS,543.67,22458,392.0,87.0,49.0,8.0,42.0,15.0,,,,,,,,True
+539,Tyler Rogers,"Rogers, Tyler",540,P,543.83,15541,,,,,,,70.0,32.0,4.0,48.0,5.0,73.0,20.0,True
+540,Kevin Kiermaier,"Kiermaier, Kevin",541,OF,544.0,11038,468.0,109.0,59.0,10.0,52.0,13.0,,,,,,,,True
+541,Kyle Freeland,"Freeland, Kyle",542,P,544.83,16256,,,,,,,158.0,91.0,9.0,124.0,0.0,180.0,56.0,True
+542,Tucker Davidson,"Davidson, Tucker",543,P,546.33,19871,,,,,,,67.0,33.0,4.0,64.0,0.0,65.0,32.0,True
+543,Mike Soroka,"Soroka, Mike",544,P,549.33,18383,,,,,,,100.0,48.0,7.0,79.0,0.0,105.0,29.0,True
+544,Cal Raleigh,"Raleigh, Cal",545,C,550.33,21534,248.0,56.0,29.0,10.0,33.0,2.0,,,,,,,,True
+545,Trevor May,"May, Trevor",546,P,550.83,6398,,,,,,,63.0,25.0,4.0,81.0,2.0,51.0,24.0,True
+546,Vladimir Gutierrez,"Gutierrez, Vladimir",547,P,551.67,19278,,,,,,,128.0,82.0,7.0,108.0,0.0,141.0,51.0,True
+547,Victor Caratini,"Caratini, Victor",548,C,552.33,14968,209.0,51.0,25.0,6.0,26.0,1.0,,,,,,,,True
+548,Yadiel Hernandez,"Hernandez, Yadiel",549,OF,552.5,19334,387.0,102.0,51.0,16.0,56.0,3.0,,,,,,,,True
+549,Alcides Escobar,"Escobar, Alcides",550,SS,552.83,6310,471.0,116.0,55.0,8.0,47.0,4.0,,,,,,,,True
+550,Drew Smyly,"Smyly, Drew",551,P,552.83,11760,,,,,,,106.0,57.0,6.0,100.0,0.0,108.0,37.0,True
+551,Jose Trevino,"Trevino, Jose",552,C,554.67,16725,288.0,69.0,30.0,6.0,31.0,2.0,,,,,,,,True
+552,Glenn Otto,"Otto, Glenn",553,P,555.5,21366,,,,,,,92.0,47.0,6.0,91.0,0.0,91.0,39.0,True
+553,Jordan Lyles,"Lyles, Jordan",554,P,556.67,7593,,,,,,,134.0,82.0,6.0,109.0,0.0,147.0,47.0,True
+554,Taylor Hearn,"Hearn, Taylor",555,P,557.0,18325,,,,,,,109.0,61.0,6.0,102.0,0.0,108.0,49.0,True
+555,Brennen Davis,"Davis, Brennen",556,OF,558.33,sa3007876,37.0,9.0,5.0,2.0,5.0,1.0,,,,,,,,True
+556,Cade Cavalli,"Cavalli, Cade",557,P,559.33,sa3014421,,,,,,,51.0,27.0,3.0,49.0,0.0,51.0,25.0,True
+557,Cole Tucker,"Tucker, Cole",558,SS,559.83,17326,311.0,72.0,38.0,6.0,31.0,7.0,,,,,,,,True
+558,Tyler Matzek,"Matzek, Tyler",559,P,560.33,10058,,,,,,,68.0,26.0,4.0,88.0,2.0,52.0,35.0,True
+559,Reynaldo Lopez,"Lopez, Reynaldo",560,P,560.83,16400,,,,,,,53.0,26.0,3.0,52.0,0.0,50.0,18.0,True
+560,Oscar Mercado,"Mercado, Oscar",561,OF,561.0,16375,252.0,61.0,33.0,7.0,28.0,9.0,,,,,,,,True
+561,Josh Naylor,"Naylor, Josh",562,OF,562.33,18839,230.0,61.0,29.0,9.0,30.0,1.0,,,,,,,,True
+562,Victor Reyes,"Reyes, Victor",563,OF,566.33,15487,256.0,70.0,33.0,6.0,27.0,7.0,,,,,,,,True
+563,Ben Gamel,"Gamel, Ben",564,OF,566.5,12160,454.0,112.0,58.0,10.0,45.0,6.0,,,,,,,,True
+564,Matt Beaty,"Beaty, Matt",565,"1B, OF",567.33,17710,308.0,79.0,43.0,9.0,47.0,3.0,,,,,,,,True
+565,Sammy Long,"Long, Sammy",566,P,569.0,25379,,,,,,,77.0,38.0,4.0,70.0,0.0,76.0,30.0,True
+566,Cody Morris,"Morris, Cody",567,P,569.17,sa3008653,,,,,,,58.0,26.0,3.0,62.0,0.0,54.0,21.0,True
+567,Justin Upton,"Upton, Justin",568,OF,569.17,5222,295.0,65.0,42.0,16.0,45.0,3.0,,,,,,,,True
+568,Jackie Bradley Jr.,"Bradley Jr., Jackie",569,OF,571.0,12984,349.0,76.0,44.0,9.0,39.0,6.0,,,,,,,,True
+569,Dan Straily,"Straily, Dan",570,P,572.5,9460,,,,,,,100.0,66.0,4.0,74.0,0.0,114.0,39.0,True
+570,Kevin Newman,"Newman, Kevin",571,SS,573.83,17696,375.0,100.0,42.0,5.0,36.0,6.0,,,,,,,,True
+571,Tyler Alexander,"Alexander, Tyler",572,P,576.17,17735,,,,,,,108.0,57.0,6.0,88.0,0.0,114.0,32.0,True
+572,Brad Keller,"Keller, Brad",573,P,576.33,15734,,,,,,,156.0,77.0,10.0,127.0,0.0,159.0,65.0,True
+573,Matt Duffy,"Duffy, Matt",574,"2B, 3B",576.5,13836,237.0,64.0,29.0,4.0,24.0,4.0,,,,,,,,True
+574,Luis Campusano,"Campusano, Luis",575,C,576.83,22217,110.0,27.0,13.0,4.0,13.0,0.0,,,,,,,,True
+575,Ryan Tepera,"Tepera, Ryan",576,P,577.17,10291,,,,,,,66.0,31.0,3.0,73.0,0.0,58.0,27.0,True
+576,Dom Nunez,"Nunez, Dom",577,C,577.67,15055,227.0,46.0,30.0,10.0,31.0,1.0,,,,,,,,True
+577,Justin Dunn,"Dunn, Justin",578,P,577.67,19268,,,,,,,82.0,44.0,4.0,82.0,0.0,76.0,39.0,True
+578,Lars Nootbaar,"Nootbaar, Lars",579,OF,578.33,21454,294.0,74.0,39.0,11.0,37.0,5.0,,,,,,,,True
+579,Andres Munoz,"Munoz, Andres",580,P,578.83,20373,,,,,,,46.0,20.0,3.0,63.0,1.0,36.0,24.0,True
+580,Dallas Keuchel,"Keuchel, Dallas",581,P,579.5,9434,,,,,,,162.0,82.0,10.0,110.0,0.0,177.0,56.0,True
+581,Antonio Senzatela,"Senzatela, Antonio",582,P,581.67,15488,,,,,,,174.0,97.0,8.0,122.0,0.0,204.0,49.0,True
+582,Seth Beer,"Beer, Seth",583,UT,581.67,20493,340.0,88.0,47.0,14.0,46.0,1.0,,,,,,,,True
+583,Kyle Wright,"Wright, Kyle",584,P,583.0,19665,,,,,,,45.0,22.0,3.0,40.0,0.0,45.0,17.0,True
+584,Matt Thaiss,"Thaiss, Matt",585,1B,583.5,19318,194.0,45.0,27.0,7.0,26.0,1.0,,,,,,,,True
+585,Jose Alvarado,"Alvarado, Jose",586,P,585.33,17780,,,,,,,67.0,28.0,4.0,87.0,9.0,52.0,45.0,True
+586,Jose Iglesias,"Iglesias, Jose",587,SS,588.5,10231,467.0,130.0,54.0,8.0,53.0,5.0,,,,,,,,True
+587,Luis Garcia,"Garcia, Luis",588,P,589.0,6984,,,,,,,60.0,28.0,3.0,63.0,1.0,54.0,26.0,True
+588,Jon Berti,"Berti, Jon",589,"2B, 3B",590.33,12037,115.0,28.0,16.0,2.0,11.0,5.0,,,,,,,,True
+589,Matt Brash,"Brash, Matt",590,P,590.5,sa3010616,,,,,,,83.0,40.0,4.0,83.0,0.0,76.0,37.0,True
+590,Jake Fraley,"Fraley, Jake",591,OF,592.0,19260,350.0,80.0,46.0,14.0,49.0,13.0,,,,,,,,True
+591,Sam Huff,"Huff, Sam",592,1B,592.67,22209,24.0,5.0,3.0,1.0,3.0,0.0,,,,,,,,True
+592,Mike Brosseau,"Brosseau, Mike",593,"2B, 3B",593.33,19683,226.0,52.0,29.0,8.0,29.0,2.0,,,,,,,,True
+593,Yimi Garcia,"Garcia, Yimi",594,P,594.5,12095,,,,,,,60.0,29.0,5.0,64.0,1.0,55.0,19.0,True
+594,Kwang Hyun Kim,"Kim, Kwang Hyun",595,P,597.5,27458,,,,,,,113.0,58.0,7.0,87.0,0.0,117.0,39.0,True
+595,David Price,"Price, David",596,P,598.17,3184,,,,,,,79.0,37.0,5.0,76.0,0.0,78.0,25.0,True
+596,Kyle Higashioka,"Higashioka, Kyle",597,C,599.17,5517,223.0,48.0,27.0,11.0,34.0,1.0,,,,,,,,True
+597,Austin Hedges,"Hedges, Austin",598,C,600.83,12976,355.0,71.0,39.0,14.0,45.0,2.0,,,,,,,,True
+598,Mauricio Dubon,"Dubon, Mauricio",599,"2B, SS, OF",601.17,16530,116.0,30.0,14.0,3.0,13.0,2.0,,,,,,,,True
+599,Tyler Duffey,"Duffey, Tyler",600,P,603.17,13758,,,,,,,66.0,30.0,3.0,69.0,4.0,61.0,25.0,True
+600,Kevin Plawecki,"Plawecki, Kevin",601,C,604.83,13807,224.0,59.0,26.0,5.0,27.0,1.0,,,,,,,,True
+601,Andrelton Simmons,"Simmons, Andrelton",602,SS,608.33,10847,482.0,123.0,53.0,6.0,47.0,5.0,,,,,,,,True
+602,Jake Burger,"Burger, Jake",603,3B,608.83,22275,51.0,13.0,7.0,2.0,7.0,0.0,,,,,,,,True
+603,Caleb Smith,"Smith, Caleb",604,P,610.17,14875,,,,,,,65.0,35.0,3.0,72.0,2.0,59.0,30.0,True
+604,Danny Duffy,"Duffy, Danny",605,P,610.33,3542,,,,,,,97.0,46.0,6.0,102.0,0.0,90.0,35.0,True
+605,Matt Liberatore,"Liberatore, Matt",606,P,614.33,,,,,,,,,,,,,,,True
+606,George Kirby,"Kirby, George",607,P,615.0,sa3011526,,,,,,,25.0,12.0,1.0,22.0,0.0,26.0,8.0,True
+607,Daulton Jefferies,"Jefferies, Daulton",608,P,616.5,19345,,,,,,,78.0,36.0,4.0,61.0,0.0,80.0,16.0,True
+608,Eli Morgan,"Morgan, Eli",609,P,618.5,20203,,,,,,,65.0,36.0,3.0,59.0,0.0,67.0,20.0,True
+609,Curt Casali,"Casali, Curt",610,C,620.0,12510,213.0,46.0,23.0,6.0,25.0,1.0,,,,,,,,True
+610,Mitch White,"White, Mitch",611,P,621.17,19225,,,,,,,24.0,12.0,1.0,24.0,0.0,23.0,9.0,True
+611,Austin Barnes,"Barnes, Austin",612,C,621.5,12158,201.0,44.0,27.0,6.0,24.0,2.0,,,,,,,,True
+612,Daniel Bard,"Bard, Daniel",613,P,625.67,7115,,,,,,,65.0,33.0,6.0,73.0,9.0,62.0,33.0,True
+613,Bailey Falter,"Falter, Bailey",614,P,626.5,20070,,,,,,,61.0,29.0,3.0,59.0,0.0,59.0,17.0,True
+614,Julian Merryweather,"Merryweather, Julian",615,P,626.5,16703,,,,,,,54.0,25.0,3.0,54.0,2.0,52.0,19.0,True
+615,Jason Castro,"Castro, Jason",616,C,627.83,8722,136.0,29.0,19.0,6.0,17.0,0.0,,,,,,,,True
+616,Colin Moran,"Moran, Colin",617,1B,629.33,16909,302.0,76.0,35.0,11.0,44.0,1.0,,,,,,,,True
+617,Odubel Herrera,"Herrera, Odubel",618,OF,630.67,11476,288.0,76.0,38.0,9.0,36.0,4.0,,,,,,,,True
+618,Aaron Bummer,"Bummer, Aaron",619,P,631.0,16258,,,,,,,64.0,22.0,4.0,76.0,0.0,51.0,28.0,True
+619,Adam Engel,"Engel, Adam",620,OF,631.0,15082,345.0,82.0,43.0,12.0,40.0,11.0,,,,,,,,True
+620,Griffin Canning,"Canning, Griffin",621,P,631.33,19867,,,,,,,38.0,19.0,2.0,40.0,0.0,36.0,14.0,True
+621,Robert Stephenson,"Stephenson, Robert",622,P,631.5,13594,,,,,,,63.0,33.0,3.0,71.0,2.0,60.0,27.0,True
+622,CJ Abrams,"Abrams, CJ",623,SS,632.83,sa3010152,64.0,16.0,8.0,1.0,7.0,3.0,,,,,,,,True
+623,Brent Suter,"Suter, Brent",624,P,632.83,13942,,,,,,,65.0,30.0,5.0,57.0,1.0,65.0,19.0,True
+624,Brusdar Graterol,"Graterol, Brusdar",625,P,634.5,20367,,,,,,,66.0,26.0,5.0,64.0,7.0,61.0,22.0,True
+625,Emilio Pagan,"Pagan, Emilio",626,P,634.83,14771,,,,,,,63.0,31.0,3.0,71.0,3.0,56.0,21.0,True
+626,Zach McKinstry,"McKinstry, Zach",627,"2B, OF",635.67,19392,184.0,44.0,23.0,7.0,26.0,3.0,,,,,,,,True
+627,Christian Arroyo,"Arroyo, Christian",628,2B,636.17,16434,211.0,52.0,27.0,7.0,28.0,2.0,,,,,,,,True
+628,Drew Pomeranz,"Pomeranz, Drew",629,P,637.17,11426,,,,,,,32.0,14.0,2.0,39.0,0.0,27.0,16.0,True
+629,Jackson Kowar,"Kowar, Jackson",630,P,637.5,21549,,,,,,,37.0,19.0,2.0,35.0,0.0,36.0,15.0,True
+630,Yu Chang,"Chang, Yu",631,"1B, 3B",637.5,14773,225.0,53.0,28.0,8.0,31.0,2.0,,,,,,,,True
+631,Alec Mills,"Mills, Alec",632,P,637.67,13834,,,,,,,81.0,46.0,4.0,59.0,0.0,90.0,25.0,True
+632,A.J. Alexy,"Alexy, A.J.",633,P,639.5,22343,,,,,,,101.0,57.0,5.0,91.0,0.0,100.0,52.0,True
+633,William Contreras,"Contreras, William",634,C,642.67,20503,23.0,6.0,3.0,1.0,3.0,0.0,,,,,,,,True
+634,Brett Phillips,"Phillips, Brett",635,OF,643.5,14735,193.0,37.0,28.0,7.0,24.0,9.0,,,,,,,,True
+635,Tony Santillan,"Santillan, Tony",636,P,644.33,19926,,,,,,,61.0,32.0,3.0,69.0,0.0,56.0,30.0,True
+636,Trevor Richards,"Richards, Trevor",637,P,645.0,19309,,,,,,,56.0,25.0,4.0,63.0,0.0,49.0,21.0,True
+637,Cristian Pache,"Pache, Cristian",638,OF,646.5,19948,206.0,47.0,26.0,6.0,23.0,4.0,,,,,,,,True
+638,Riley Adams,"Adams, Riley",639,C,647.33,19864,284.0,62.0,35.0,10.0,33.0,1.0,,,,,,,,True
+639,Alex Vesia,"Vesia, Alex",640,P,648.5,25007,,,,,,,62.0,28.0,4.0,81.0,2.0,50.0,31.0,True
+640,Seth Lugo,"Lugo, Seth",641,P,648.67,12447,,,,,,,70.0,30.0,4.0,77.0,1.0,62.0,21.0,True
+641,Aaron Loup,"Loup, Aaron",642,P,650.33,10343,,,,,,,62.0,25.0,4.0,62.0,1.0,57.0,20.0,True
+642,Justin Steele,"Steele, Justin",643,P,652.33,17312,,,,,,,91.0,46.0,5.0,89.0,0.0,87.0,43.0,True
+643,Maikel Franco,"Franco, Maikel",644,3B,653.17,12179,123.0,29.0,13.0,5.0,17.0,0.0,,,,,,,,True
+644,Mike Mayers,"Mayers, Mike",645,P,654.17,15451,,,,,,,66.0,29.0,4.0,76.0,2.0,59.0,24.0,True
+645,Colton Welker,"Welker, Colton",646,3B,657.17,19961,405.0,104.0,52.0,14.0,52.0,3.0,,,,,,,,True
+646,Cole Winn,"Winn, Cole",647,P,657.17,sa3008662,,,,,,,39.0,21.0,2.0,36.0,0.0,39.0,18.0,True
+647,Steven Duggar,"Duggar, Steven",648,OF,657.33,17719,327.0,78.0,42.0,7.0,37.0,8.0,,,,,,,,True
+648,Jake McCarthy,"McCarthy, Jake",649,OF,658.67,21622,310.0,70.0,38.0,8.0,34.0,18.0,,,,,,,,True
+649,Luke Jackson,"Jackson, Luke",650,P,658.83,11752,,,,,,,66.0,29.0,3.0,73.0,1.0,61.0,28.0,True
+650,MacKenzie Gore,"Gore, MacKenzie",651,P,658.83,sa3005068,,,,,,,32.0,17.0,2.0,29.0,0.0,31.0,15.0,True
+651,Brent Rooker,"Rooker, Brent",652,OF,659.0,19627,245.0,54.0,35.0,13.0,36.0,1.0,,,,,,,,True
+652,Josh VanMeter,"VanMeter, Josh",653,"2B, 3B",662.17,15170,311.0,72.0,42.0,11.0,41.0,6.0,,,,,,,,True
+653,Randy Dobnak,"Dobnak, Randy",654,P,662.17,23798,,,,,,,101.0,51.0,6.0,65.0,0.0,114.0,30.0,True
+654,Corey Dickerson,"Dickerson, Corey",655,OF,662.67,10762,395.0,105.0,49.0,11.0,46.0,5.0,,,,,,,,True
+655,Dylan Coleman,"Coleman, Dylan",656,P,663.0,22276,,,,,,,60.0,25.0,4.0,67.0,0.0,53.0,26.0,True
+656,Geraldo Perdomo,"Perdomo, Geraldo",657,SS,664.17,22799,92.0,21.0,11.0,1.0,8.0,2.0,,,,,,,,True
+657,Greg Allen,"Allen, Greg",658,OF,664.5,16623,162.0,41.0,21.0,3.0,16.0,8.0,,,,,,,,True
+658,Nolan Jones,"Jones, Nolan",659,3B,665.0,sa917941,207.0,48.0,28.0,7.0,25.0,4.0,,,,,,,,True
+659,Tommy Romero,"Romero, Tommy",660,P,666.83,sa3004469,,,,,,,13.0,6.0,1.0,13.0,0.0,12.0,5.0,True
+660,Jake Cousins,"Cousins, Jake",661,P,668.83,21620,,,,,,,60.0,24.0,3.0,76.0,0.0,48.0,26.0,True
+661,Joan Adon,"Adon, Joan",662,P,669.67,22925,,,,,,,26.0,15.0,1.0,21.0,0.0,27.0,12.0,True
+662,Johnny Cueto,"Cueto, Johnny",663,P,669.67,6893,,,,,,,142.0,75.0,8.0,113.0,0.0,151.0,43.0,True
+663,Miguel Andujar,"Andujar, Miguel",664,OF,670.17,15878,98.0,26.0,13.0,4.0,13.0,0.0,,,,,,,,True
+664,Brent Honeywell Jr.,"Honeywell Jr., Brent",665,P,672.5,16466,,,,,,,61.0,32.0,3.0,47.0,0.0,65.0,20.0,True
+665,Dustin May,"May, Dustin",666,P,673.0,19716,,,,,,,47.0,19.0,3.0,48.0,0.0,43.0,14.0,True
+666,Paolo Espino,"Espino, Paolo",667,P,674.0,8246,,,,,,,61.0,36.0,3.0,52.0,0.0,67.0,18.0,True
+667,Phil Gosselin,"Gosselin, Phil",668,"1B, 3B, OF",674.0,10953,228.0,56.0,26.0,5.0,26.0,2.0,,,,,,,,True
+668,Wil Crowe,"Crowe, Wil",669,P,675.33,19800,,,,,,,96.0,55.0,4.0,83.0,0.0,101.0,43.0,True
+669,Ryan Weathers,"Weathers, Ryan",670,P,676.0,23796,,,,,,,36.0,19.0,2.0,28.0,0.0,38.0,13.0,True
+670,Stephen Piscotty,"Piscotty, Stephen",671,OF,676.67,13367,503.0,119.0,57.0,18.0,65.0,4.0,,,,,,,,True
+671,Luis Cessa,"Cessa, Luis",672,P,677.0,13345,,,,,,,66.0,33.0,3.0,60.0,4.0,66.0,24.0,True
+672,Zack Collins,"Collins, Zack",673,C,679.33,19181,65.0,13.0,9.0,3.0,9.0,0.0,,,,,,,,True
+673,Miguel Yajure,"Yajure, Miguel",674,P,680.5,21111,,,,,,,34.0,18.0,2.0,28.0,0.0,36.0,13.0,True
+674,Andrew Chafin,"Chafin, Andrew",675,P,681.0,12988,,,,,,,70.0,30.0,4.0,69.0,0.0,63.0,25.0,True
+675,Bryse Wilson,"Wilson, Bryse",676,P,681.67,19990,,,,,,,117.0,65.0,6.0,84.0,0.0,129.0,36.0,True
+676,Jason Heyward,"Heyward, Jason",677,OF,681.67,4940,372.0,91.0,48.0,12.0,46.0,5.0,,,,,,,,True
+677,Kevin Pillar,"Pillar, Kevin",678,OF,684.17,12434,282.0,69.0,35.0,10.0,38.0,5.0,,,,,,,,True
+678,Austin Allen,"Allen, Austin",679,C,685.67,18083,208.0,52.0,25.0,9.0,28.0,1.0,,,,,,,,True
+679,Mychal Givens,"Givens, Mychal",680,P,686.83,10430,,,,,,,66.0,34.0,4.0,79.0,0.0,57.0,32.0,True
+680,Asdrubal Cabrera,"Cabrera, Asdrubal",681,3B,687.17,4962,237.0,56.0,30.0,8.0,35.0,1.0,,,,,,,,True
+681,James Paxton,"Paxton, James",682,P,688.17,11828,,,,,,,43.0,21.0,3.0,46.0,0.0,41.0,15.0,True
+682,J.P. Feyereisen,"Feyereisen, J.P.",683,P,688.5,16610,,,,,,,58.0,28.0,4.0,63.0,1.0,50.0,30.0,True
+683,Dillon Peters,"Peters, Dillon",684,P,689.17,18790,,,,,,,92.0,49.0,4.0,77.0,0.0,96.0,32.0,True
+684,Spencer Strider,"Strider, Spencer",685,P,689.33,27498,,,,,,,31.0,15.0,2.0,34.0,0.0,28.0,13.0,True
+685,Touki Toussaint,"Toussaint, Touki",686,P,689.83,16929,,,,,,,58.0,31.0,3.0,61.0,0.0,55.0,29.0,True
+686,Corbin Martin,"Martin, Corbin",687,P,690.0,19884,,,,,,,38.0,24.0,2.0,33.0,0.0,41.0,20.0,True
+687,Kirby Yates,"Yates, Kirby",688,P,690.0,9073,,,,,,,36.0,15.0,3.0,46.0,2.0,30.0,12.0,True
+688,Nick Fortes,"Fortes, Nick",689,C,690.5,21538,115.0,28.0,15.0,3.0,14.0,1.0,,,,,,,,True
+689,Travis Swaggerty,"Swaggerty, Travis",690,OF,690.83,sa3007512,188.0,46.0,23.0,5.0,19.0,6.0,,,,,,,,True
+690,Bruce Zimmermann,"Zimmermann, Bruce",691,P,691.83,20370,,,,,,,118.0,66.0,6.0,99.0,0.0,126.0,46.0,True
+691,Thairo Estrada,"Estrada, Thairo",692,SS,692.17,16426,264.0,69.0,36.0,9.0,34.0,4.0,,,,,,,,True
+692,Jose Leclerc,"Leclerc, Jose",693,P,692.33,14524,,,,,,,36.0,16.0,2.0,47.0,0.0,28.0,18.0,True
+693,Ryne Stanek,"Stanek, Ryne",694,P,692.83,15947,,,,,,,70.0,32.0,4.0,88.0,1.0,57.0,34.0,True
+694,Clay Holmes,"Holmes, Clay",695,P,694.5,13649,,,,,,,60.0,26.0,4.0,66.0,1.0,52.0,32.0,True
+695,Cooper Hummel,"Hummel, Cooper",696,OF,695.5,sa918412,155.0,38.0,23.0,5.0,20.0,2.0,,,,,,,,True
+696,Zach Davies,"Davies, Zach",697,P,695.83,13183,,,,,,,148.0,85.0,8.0,108.0,0.0,160.0,61.0,True
+697,Deivi Garcia,"Garcia, Deivi",698,P,695.83,20276,,,,,,,8.0,5.0,0.0,7.0,0.0,8.0,5.0,True
+698,Andrew Knizner,"Knizner, Andrew",699,C,696.0,19514,172.0,41.0,21.0,5.0,20.0,1.0,,,,,,,,True
+699,Daz Cameron,"Cameron, Daz",700,OF,696.17,18353,151.0,35.0,19.0,4.0,17.0,5.0,,,,,,,,True
+700,Tyler Gilbert,"Gilbert, Tyler",701,P,696.83,17964,,,,,,,58.0,32.0,3.0,46.0,0.0,61.0,21.0,True
+701,Zac Lowther,"Lowther, Zac",702,P,697.67,20243,,,,,,,89.0,49.0,5.0,79.0,0.0,90.0,40.0,True
+702,Demarcus Evans,"Evans, Demarcus",703,P,698.5,21087,,,,,,,40.0,21.0,2.0,45.0,2.0,36.0,23.0,True
+703,Garrett Richards,"Richards, Garrett",704,P,700.0,9784,,,,,,,114.0,61.0,6.0,96.0,0.0,119.0,46.0,True
+704,Vinnie Pasquantino,"Pasquantino, Vinnie",705,1B,701.0,,,,,,,,,,,,,,,True
+705,Isaac Paredes,"Paredes, Isaac",706,2B,701.33,20036,67.0,17.0,9.0,2.0,8.0,0.0,,,,,,,,True
+706,Drew Waters,"Waters, Drew",707,OF,702.0,sa3004378,228.0,55.0,26.0,6.0,22.0,9.0,,,,,,,,True
+707,Aristides Aquino,"Aquino, Aristides",708,OF,705.5,15482,409.0,91.0,59.0,25.0,71.0,7.0,,,,,,,,True
+708,Jake Diekman,"Diekman, Jake",709,P,705.5,5003,,,,,,,69.0,28.0,4.0,91.0,0.0,53.0,39.0,True
+709,Josh Fleming,"Fleming, Josh",710,P,708.17,20418,,,,,,,43.0,21.0,3.0,30.0,0.0,46.0,12.0,True
+710,Evan White,"White, Evan",711,1B,708.17,20078,218.0,47.0,25.0,9.0,28.0,2.0,,,,,,,,True
+711,Yonny Hernandez,"Hernandez, Yonny",712,3B,708.83,19432,36.0,9.0,5.0,0.0,3.0,2.0,,,,,,,,True
+712,Harold Castro,"Castro, Harold",713,"2B, SS",709.0,14691,178.0,48.0,18.0,2.0,18.0,1.0,,,,,,,,True
+713,Daniel Ponce de Leon,"Ponce de Leon, Daniel",714,P,709.83,16110,,,,,,,18.0,10.0,1.0,19.0,0.0,17.0,10.0,True
+714,Jed Lowrie,"Lowrie, Jed",715,2B,710.0,4418,413.0,100.0,50.0,12.0,57.0,0.0,,,,,,,,True
+715,Joe Ross,"Ross, Joe",716,P,710.33,12972,,,,,,,78.0,40.0,5.0,72.0,0.0,79.0,27.0,True
+716,Phil Maton,"Maton, Phil",717,P,712.0,18064,,,,,,,64.0,29.0,3.0,71.0,0.0,57.0,27.0,True
+717,Luis Rengifo,"Rengifo, Luis",718,SS,712.33,19858,195.0,48.0,25.0,6.0,22.0,5.0,,,,,,,,True
+718,Adam Ottavino,"Ottavino, Adam",719,P,713.17,1247,,,,,,,68.0,30.0,5.0,81.0,0.0,57.0,37.0,True
+719,Reese McGuire,"McGuire, Reese",720,C,713.33,15674,64.0,15.0,8.0,2.0,6.0,0.0,,,,,,,,True
+720,Alex Dickerson,"Dickerson, Alex",721,OF,713.67,12649,265.0,67.0,37.0,11.0,38.0,1.0,,,,,,,,True
+721,Ryan Vilade,"Vilade, Ryan",722,OF,713.83,22165,230.0,60.0,27.0,4.0,22.0,5.0,,,,,,,,True
+722,Clarke Schmidt,"Schmidt, Clarke",723,P,713.83,19899,,,,,,,14.0,8.0,1.0,13.0,0.0,15.0,6.0,True
+723,Yonathan Daza,"Daza, Yonathan",724,OF,714.17,15794,291.0,81.0,32.0,4.0,29.0,4.0,,,,,,,,True
+724,Amir Garrett,"Garrett, Amir",725,P,714.17,14375,,,,,,,61.0,29.0,3.0,77.0,1.0,52.0,33.0,True
+725,JT Chargois,"Chargois, JT",726,P,714.83,13767,,,,,,,63.0,26.0,4.0,68.0,3.0,54.0,28.0,True
+726,Austin Adams,"Adams, Austin",727,P,715.0,13801,,,,,,,48.0,20.0,3.0,62.0,0.0,39.0,26.0,True
+727,Matt Wisler,"Wisler, Matt",728,P,716.0,12804,,,,,,,60.0,26.0,4.0,69.0,2.0,53.0,19.0,True
+728,D.L. Hall,"Hall, D.L.",729,P,716.5,sa3005282,,,,,,,25.0,14.0,1.0,26.0,0.0,23.0,15.0,True
+729,David Bote,"Bote, David",730,"2B, 3B",716.5,14593,197.0,46.0,25.0,7.0,27.0,1.0,,,,,,,,True
+730,Johan Camargo,"Camargo, Johan",731,1B,717.0,14950,158.0,41.0,22.0,6.0,21.0,0.0,,,,,,,,True
+731,Michael King,"King, Michael",732,P,717.67,19853,,,,,,,63.0,29.0,4.0,63.0,0.0,60.0,21.0,True
+732,Austin Martin,"Martin, Austin",733,OF,718.0,,,,,,,,,,,,,,,True
+733,Heliot Ramos,"Ramos, Heliot",734,OF,718.5,sa3004693,212.0,50.0,25.0,6.0,22.0,5.0,,,,,,,,True
+734,Joshua Fuentes,"Fuentes, Joshua",735,"1B, 3B",718.67,,,,,,,,,,,,,,,True
+735,Donovan Solano,"Solano, Donovan",736,2B,719.5,8623,384.0,107.0,44.0,7.0,41.0,2.0,,,,,,,,True
+736,Justus Sheffield,"Sheffield, Justus",737,P,719.67,17285,,,,,,,49.0,24.0,3.0,44.0,0.0,49.0,22.0,True
+737,Craig Stammen,"Stammen, Craig",738,P,720.67,7274,,,,,,,60.0,25.0,4.0,54.0,1.0,58.0,14.0,True
+738,Jovani Moran,"Moran, Jovani",739,P,721.83,20422,,,,,,,46.0,21.0,2.0,55.0,0.0,39.0,27.0,True
+739,Keegan Akin,"Akin, Keegan",740,P,721.83,19362,,,,,,,98.0,53.0,5.0,90.0,0.0,100.0,39.0,True
+740,David Dahl,"Dahl, David",741,OF,722.83,13744,116.0,28.0,14.0,4.0,14.0,1.0,,,,,,,,True
+741,Matthew Boyd,"Boyd, Matthew",742,P,723.33,15440,,,,,,,81.0,39.0,5.0,84.0,0.0,77.0,23.0,True
+742,Tucupita Marcano,"Marcano, Tucupita",743,2B,724.0,22871,75.0,18.0,10.0,1.0,7.0,2.0,,,,,,,,True
+743,Jordan Balazovic,"Balazovic, Jordan",744,P,724.17,sa918017,,,,,,,42.0,23.0,2.0,35.0,0.0,45.0,17.0,True
+744,Taylor Ward,"Ward, Taylor",745,OF,724.5,17548,18.0,5.0,3.0,1.0,2.0,0.0,,,,,,,,True
+745,Jeter Downs,"Downs, Jeter",746,SS,725.67,sa3004615,13.0,3.0,2.0,0.0,1.0,0.0,,,,,,,,True
+746,Domingo Acevedo,"Acevedo, Domingo",747,P,725.67,17092,,,,,,,62.0,28.0,3.0,64.0,0.0,57.0,21.0,True
+747,Jharel Cotton,"Cotton, Jharel",748,P,725.83,13654,,,,,,,58.0,30.0,3.0,59.0,0.0,56.0,26.0,True
+748,Deolis Guerra,"Guerra, Deolis",749,P,726.17,8410,,,,,,,64.0,30.0,3.0,63.0,3.0,60.0,22.0,True
+749,Johan Oviedo,"Oviedo, Johan",750,P,726.83,22487,,,,,,,36.0,19.0,2.0,32.0,0.0,36.0,18.0,True
+750,Casey Sadler,"Sadler, Casey",751,P,727.0,11209,,,,,,,60.0,26.0,3.0,58.0,0.0,54.0,19.0,True
+751,Chance Sisco,"Sisco, Chance",752,C,727.0,15694,67.0,14.0,8.0,2.0,8.0,0.0,,,,,,,,True
+752,Royce Lewis,"Lewis, Royce",753,SS,727.17,,,,,,,,,,,,,,,True
+753,Jordan Luplow,"Luplow, Jordan",754,OF,728.5,16424,326.0,76.0,48.0,15.0,47.0,4.0,,,,,,,,True
+754,Taylor Trammell,"Trammell, Taylor",755,OF,729.17,19960,61.0,13.0,8.0,2.0,7.0,1.0,,,,,,,,True
+755,JJ Bleday,"Bleday, JJ",756,UT,729.33,sa3011642,37.0,8.0,5.0,1.0,4.0,0.0,,,,,,,,True
+756,Estevan Florial,"Florial, Estevan",757,OF,729.33,19151,163.0,35.0,20.0,6.0,20.0,5.0,,,,,,,,True
+757,Caleb Kilian,"Kilian, Caleb",758,P,729.5,sa3011773,,,,,,,8.0,4.0,1.0,7.0,0.0,9.0,2.0,True
+758,Logan Allen,"Allen, Logan",759,P,729.67,,,,,,,,,,,,,,,True
+759,Bobby Miller,"Miller, Bobby",760,P,729.67,,,,,,,,,,,,,,,True
+760,Spencer Patton,"Patton, Spencer",761,P,730.0,12361,,,,,,,64.0,32.0,4.0,65.0,3.0,60.0,27.0,True
+761,Tanner Scott,"Scott, Tanner",762,P,730.17,17586,,,,,,,60.0,24.0,4.0,76.0,2.0,49.0,32.0,True
+762,Diego Castillo,"Castillo, Diego",763,2B,730.5,sa872839,26.0,6.0,3.0,1.0,3.0,0.0,,,,,,,,True
+763,Kolby Allard,"Allard, Kolby",764,P,732.17,18694,,,,,,,56.0,31.0,3.0,48.0,0.0,59.0,18.0,True
+764,Daniel Vogelbach,"Vogelbach, Daniel",765,1B,732.5,14130,151.0,35.0,23.0,8.0,23.0,0.0,,,,,,,,True
+765,Oswald Peraza,"Peraza, Oswald",766,SS,732.5,sa3003305,194.0,49.0,23.0,5.0,21.0,10.0,,,,,,,,True
+766,Kevin Smith,"Smith, Kevin",767,3B,732.67,20242,319.0,73.0,41.0,15.0,45.0,8.0,,,,,,,,True
+767,Hanser Alberto,"Alberto, Hanser",768,"2B, 3B",732.67,,,,,,,,,,,,,,,True
+768,Shea Langeliers,"Langeliers, Shea",769,C,732.83,,,,,,,,,,,,,,,True
+769,Richie Palacios,"Palacios, Richie",770,2B,732.83,sa3006908,68.0,18.0,10.0,1.0,7.0,2.0,,,,,,,,True
+770,Miguel Vargas,"Vargas, Miguel",771,3B,733.33,,,,,,,,,,,,,,,True
+771,Brooks Raley,"Raley, Brooks",772,P,733.33,10061,,,,,,,52.0,20.0,3.0,56.0,0.0,45.0,21.0,True
+772,Hoy Park,"Park, Hoy",773,2B,733.67,18027,156.0,37.0,22.0,4.0,17.0,4.0,,,,,,,,True
+773,Wily Peralta,"Peralta, Wily",774,P,734.33,7738,,,,,,,123.0,68.0,6.0,92.0,0.0,131.0,54.0,True
+774,Hansel Robles,"Robles, Hansel",775,P,734.83,11801,,,,,,,68.0,33.0,4.0,73.0,0.0,63.0,29.0,True
+775,Jake Brentz,"Brentz, Jake",776,P,735.0,17783,,,,,,,60.0,27.0,3.0,70.0,1.0,51.0,33.0,True
+776,Yermin Mercedes,"Mercedes, Yermin",777,UT,735.67,,,,,,,,,,,,,,,True
+777,Joe Kelly,"Kelly, Joe",778,P,736.5,9761,,,,,,,59.0,23.0,3.0,65.0,0.0,51.0,26.0,True
+778,Derek Hill,"Hill, Derek",779,OF,736.5,16947,193.0,46.0,23.0,4.0,19.0,6.0,,,,,,,,True
+779,Ethan Small,"Small, Ethan",780,P,736.67,sa3011621,,,,,,,39.0,21.0,2.0,37.0,0.0,38.0,19.0,True
+780,Seranthony Dominguez,"Dominguez, Seranthony",781,P,737.17,19249,,,,,,,52.0,24.0,3.0,52.0,5.0,47.0,23.0,True
+781,Travis Shaw,"Shaw, Travis",782,"1B, 3B",737.5,11982,195.0,43.0,24.0,8.0,28.0,1.0,,,,,,,,True
+782,DJ Stewart,"Stewart, DJ",783,OF,738.33,17766,192.0,43.0,27.0,9.0,28.0,1.0,,,,,,,,True
+783,Martin Perez,"Perez, Martin",784,P,738.5,6902,,,,,,,105.0,58.0,7.0,83.0,0.0,116.0,40.0,True
+784,A.J. Minter,"Minter, A.J.",785,P,738.67,18655,,,,,,,62.0,25.0,5.0,73.0,0.0,54.0,24.0,True
+785,Scott Kingery,"Kingery, Scott",786,OF,739.0,17975,173.0,37.0,20.0,5.0,18.0,4.0,,,,,,,,True
+786,Max Schrock,"Schrock, Max",787,OF,739.17,17750,148.0,38.0,18.0,4.0,17.0,2.0,,,,,,,,True
+787,Rafael Marchan,"Marchan, Rafael",788,C,739.17,21646,58.0,13.0,7.0,1.0,5.0,0.0,,,,,,,,True
+788,TJ Friedl,"Friedl, TJ",789,OF,739.5,19522,278.0,71.0,37.0,8.0,31.0,8.0,,,,,,,,True
+789,Brendon Davis,"Davis, Brendon",790,3B,739.83,sa875089,25.0,6.0,3.0,1.0,3.0,0.0,,,,,,,,True
+790,Elehuris Montero,"Montero, Elehuris",791,3B,739.83,sa872477,31.0,8.0,5.0,2.0,5.0,0.0,,,,,,,,True
+791,Sergio Alcantara,"Alcantara, Sergio",792,"2B, SS",740.0,16417,214.0,48.0,26.0,4.0,20.0,3.0,,,,,,,,True
+792,J.B. Bukauskas,"Bukauskas, J.B.",793,P,740.33,20491,,,,,,,52.0,28.0,2.0,50.0,0.0,50.0,29.0,True
+793,Tomas Nido,"Nido, Tomas",794,C,740.33,13755,192.0,42.0,20.0,5.0,21.0,1.0,,,,,,,,True
+794,Wilson Ramos,"Ramos, Wilson",795,C,740.5,1433,159.0,42.0,18.0,6.0,23.0,0.0,,,,,,,,True
+795,J.B. Wendelken,"Wendelken, J.B.",796,P,740.67,14506,,,,,,,60.0,31.0,4.0,58.0,1.0,58.0,26.0,True
+796,J.A. Happ,"Happ, J.A.",797,P,740.67,7410,,,,,,,138.0,74.0,8.0,109.0,0.0,144.0,44.0,True
+797,Jake Bauers,"Bauers, Jake",798,"1B, OF",741.0,,,,,,,,,,,,,,,True
+798,Ryan Noda,"Noda, Ryan",799,UT,741.17,,,,,,,,,,,,,,,True
+799,Mark Leiter,"Leiter, Mark",800,P,741.17,,,,,,,,,,,,,,,True
+800,Taylor Widener,"Widener, Taylor",801,P,741.33,19266,,,,,,,46.0,25.0,2.0,47.0,0.0,45.0,21.0,True
+801,Yonny Chirinos,"Chirinos, Yonny",802,P,741.5,16401,,,,,,,97.0,45.0,5.0,82.0,0.0,94.0,26.0,True
+802,Jack Mayfield,"Mayfield, Jack",803,3B,742.0,15402,141.0,33.0,17.0,5.0,19.0,2.0,,,,,,,,True
+803,Kervin Castro,"Castro, Kervin",804,P,742.0,21656,,,,,,,53.0,25.0,3.0,50.0,0.0,51.0,23.0,True
+804,Jacob Nottingham,"Nottingham, Jacob",805,UT,742.17,16448,126.0,25.0,15.0,5.0,16.0,2.0,,,,,,,,True
+805,Pedro Leon,"Leon, Pedro",806,OF,743.17,sa3014838,6.0,1.0,1.0,0.0,1.0,0.0,,,,,,,,True
+806,Brett Anderson,"Anderson, Brett",807,P,743.33,8223,,,,,,,109.0,57.0,7.0,63.0,0.0,123.0,33.0,True
+807,Roberto Osuna,"Osuna, Roberto",808,P,743.33,,,,,,,,,,,,,,,True
+808,Chris Archer,"Archer, Chris",809,P,743.33,6345,,,,,,,97.0,50.0,5.0,98.0,0.0,96.0,38.0,True
+809,Colin Poche,"Poche, Colin",810,P,743.67,19403,,,,,,,44.0,18.0,3.0,55.0,0.0,35.0,17.0,True
+810,Mark Vientos,"Vientos, Mark",811,UT,744.0,sa3004720,13.0,3.0,2.0,1.0,2.0,0.0,,,,,,,,True
+811,Connor Brogdon,"Brogdon, Connor",812,P,744.0,21205,,,,,,,63.0,30.0,4.0,66.0,1.0,57.0,24.0,True
+812,Hans Crouse,"Crouse, Hans",813,P,744.5,22192,,,,,,,31.0,19.0,2.0,26.0,0.0,33.0,14.0,True
+813,Brandon Williamson,"Williamson, Brandon",814,P,744.67,sa3011494,,,,,,,34.0,16.0,2.0,36.0,0.0,32.0,13.0,True
+814,Jared Oliva,"Oliva, Jared",815,OF,744.83,19968,114.0,26.0,13.0,2.0,11.0,5.0,,,,,,,,True
+815,Peter Solomon,"Solomon, Peter",816,P,744.83,20476,,,,,,,11.0,5.0,1.0,11.0,0.0,10.0,5.0,True
+816,Ryan Pepiot,"Pepiot, Ryan",817,P,744.83,sa3011244,,,,,,,8.0,4.0,0.0,8.0,0.0,8.0,3.0,True
+817,Tim Mayza,"Mayza, Tim",818,P,745.0,15042,,,,,,,62.0,25.0,4.0,66.0,2.0,54.0,23.0,True
+818,Nelson Velazquez,"Velazquez, Nelson",819,OF,745.33,sa3005129,65.0,16.0,8.0,3.0,9.0,1.0,,,,,,,,True
+819,Michael Stefanic,"Stefanic, Michael",820,2B,745.67,sa3008479,64.0,17.0,8.0,2.0,7.0,1.0,,,,,,,,True
+820,Gabriel Arias,"Arias, Gabriel",821,SS,745.83,,,,,,,,,,,,,,,True
+821,Peyton Battenfield,"Battenfield, Peyton",822,P,746.0,,,,,,,,,,,,,,,True
+822,Nomar Mazara,"Mazara, Nomar",823,OF,746.33,14553,317.0,77.0,39.0,11.0,43.0,2.0,,,,,,,,True
+823,Genesis Cabrera,"Cabrera, Genesis",824,P,746.67,17490,,,,,,,66.0,29.0,4.0,75.0,1.0,56.0,31.0,True
+824,Sam Coonrod,"Coonrod, Sam",825,P,746.67,17264,,,,,,,59.0,25.0,3.0,63.0,2.0,52.0,25.0,True
+825,Mike Foltynewicz,"Foltynewicz, Mike",826,P,746.67,10811,,,,,,,125.0,74.0,6.0,96.0,0.0,134.0,42.0,True
+826,Logan Allen,"Allen, Logan",827,P,746.83,18555,,,,,,,57.0,31.0,3.0,49.0,0.0,59.0,24.0,True
+827,Erik Swanson,"Swanson, Erik",828,P,746.83,16587,,,,,,,40.0,20.0,2.0,41.0,0.0,37.0,13.0,True
+828,Kelvin Gutierrez,"Gutierrez, Kelvin",829,3B,747.0,17468,372.0,90.0,40.0,9.0,39.0,4.0,,,,,,,,True
+829,Rene Pinto,"Pinto, Rene",830,UT,747.0,sa826668,35.0,8.0,4.0,1.0,4.0,0.0,,,,,,,,True
+830,Anthony Bass,"Bass, Anthony",831,P,747.33,7982,,,,,,,63.0,29.0,4.0,60.0,2.0,59.0,25.0,True
+831,Dillon Tate,"Tate, Dillon",832,P,747.5,17796,,,,,,,58.0,27.0,3.0,48.0,1.0,58.0,21.0,True
+832,Adrian Morejon,"Morejon, Adrian",833,P,747.67,20039,,,,,,,23.0,9.0,2.0,27.0,0.0,19.0,9.0,True
+833,Josh James,"James, Josh",834,P,747.83,16794,,,,,,,24.0,11.0,1.0,30.0,0.0,20.0,13.0,True
+834,Josh Winder,"Winder, Josh",835,P,748.0,sa3007993,,,,,,,80.0,43.0,3.0,67.0,0.0,84.0,26.0,True
+835,Jorge Lopez,"Lopez, Jorge",836,P,748.0,14527,,,,,,,56.0,28.0,3.0,53.0,2.0,56.0,20.0,True
+836,Trevor Williams,"Williams, Trevor",837,P,748.33,16977,,,,,,,82.0,40.0,4.0,73.0,0.0,82.0,24.0,True
+837,Tommy Kahnle,"Kahnle, Tommy",838,P,748.33,11384,,,,,,,54.0,22.0,3.0,71.0,0.0,44.0,20.0,True
+838,Caleb Thielbar,"Thielbar, Caleb",839,P,748.5,10078,,,,,,,62.0,28.0,3.0,66.0,1.0,57.0,21.0,True
+839,Scott Effross,"Effross, Scott",840,P,748.5,18384,,,,,,,62.0,32.0,4.0,53.0,0.0,64.0,19.0,True
+840,Brett Baty,"Baty, Brett",841,3B,748.83,,,,,,,,,,,,,,,True
+841,Jake Woodford,"Woodford, Jake",842,P,749.0,18674,,,,,,,58.0,33.0,3.0,43.0,0.0,60.0,24.0,True
+842,Brad Wieck,"Wieck, Brad",843,P,749.0,16390,,,,,,,55.0,26.0,3.0,68.0,1.0,46.0,26.0,True
+843,Griffin Jax,"Jax, Griffin",844,P,749.17,20253,,,,,,,83.0,52.0,4.0,63.0,0.0,93.0,29.0,True
+844,Ronald Torreyes,"Torreyes, Ronald",845,"3B, SS",749.17,11400,181.0,45.0,19.0,4.0,20.0,1.0,,,,,,,,True
+845,Ryan Kreidler,"Kreidler, Ryan",846,SS,749.5,sa3010587,25.0,6.0,3.0,1.0,3.0,1.0,,,,,,,,True
+846,Mallex Smith,"Smith, Mallex",847,OF,749.5,,,,,,,,,,,,,,,True
+847,Michael Busch,"Busch, Michael",848,2B,749.83,,,,,,,,,,,,,,,True
+848,Tyler Freeman,"Freeman, Tyler",849,UT,750.0,,,,,,,,,,,,,,,True
+849,Connor Seabold,"Seabold, Connor",850,P,750.0,19695,,,,,,,27.0,16.0,1.0,21.0,0.0,29.0,10.0,True
+850,Matt Harvey,"Harvey, Matt",851,P,750.17,11713,,,,,,,55.0,33.0,3.0,41.0,0.0,63.0,17.0,True
+851,Noe Ramirez,"Ramirez, Noe",852,P,750.17,12800,,,,,,,64.0,33.0,3.0,63.0,1.0,61.0,24.0,True
+852,Jose Rojas,"Rojas, Jose",853,OF,750.33,19331,25.0,6.0,3.0,1.0,3.0,0.0,,,,,,,,True
+853,Taylor Jones,"Jones, Taylor",854,1B,750.33,19533,56.0,14.0,8.0,2.0,8.0,0.0,,,,,,,,True
+854,Dominic Leone,"Leone, Dominic",855,P,750.5,13763,,,,,,,62.0,29.0,4.0,68.0,0.0,56.0,28.0,True
+855,Steven Brault,"Brault, Steven",856,P,750.5,15291,,,,,,,105.0,59.0,5.0,84.0,0.0,109.0,52.0,True
+856,Jordan Groshans,"Groshans, Jordan",857,SS,750.67,sa3006893,57.0,14.0,8.0,1.0,6.0,0.0,,,,,,,,True
+857,Colby White,"White, Colby",858,P,750.67,,,,,,,,,,,,,,,True
+858,Jon Heasley,"Heasley, Jon",859,P,750.83,22224,,,,,,,39.0,21.0,2.0,31.0,0.0,41.0,15.0,True
+859,Buster Posey,"Posey, Buster",860,C,750.83,,,,,,,,,,,,,,,True

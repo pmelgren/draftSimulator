@@ -63,9 +63,8 @@ def determine_slot(pos, ros, px):
 # Initial Data Prep
 #######################
 
-adp = pd.read_csv('ADP.tsv',sep = '\t')
-players = adp.copy()
-players['Available'] = True
+players = pd.read_csv('players.csv')
+
 teamnames = 'AABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 #######################
@@ -123,9 +122,11 @@ startsection = [
 draftpanel = [
     html.Div([
         html.H3('Select Player'),
-        dcc.Dropdown(options = adp.Rank.astype(str)+'. '+adp.Player+' ('+adp['Position(s)']+')'
+        dcc.Dropdown(options = players.Rank.astype(str)+'. '+players.Name+' ('+players['Position(s)']+')'
                      ,id = 'pick-dropdown'),
-        html.Button('Draft Player', id='draft-button', n_clicks=0)
+        html.Button('Draft Player', id='draft-button', n_clicks=0),
+        html.Table(make_table(pd.DataFrame({})),id='bat-proj-table',className='table'),
+        html.Table(make_table(pd.DataFrame({})),id='pit-proj-table',className='table'),
     ],id='draft-panel',style={"width": "75%"})
 ]
 
@@ -220,6 +221,40 @@ def update_roster_table(picks_json,teamchoice,roster_json):
     teampx = px.loc[px.Team == teamchoice]
     ret = ros.merge(teampx,on='Slot',how='left').sort_values('Num')
     return make_table(ret[['Slot','Player','Round']])
+
+@app.callback(
+    Output('bat-proj-table', 'children'),
+    [Input('pick-dropdown','value')],
+    [State('players','children')]
+)
+def update_bat_proj_table(pick,players_json):
+    pl = pd.read_json(players_json)
+    pickrank = int(pick.split('.')[0])
+    pick_idx = pl.loc[pl.Rank == pickrank].index[0]
+    pl['AVG'] = (pl['H']/pl['AB']).round(3)
+
+    if pl.loc[pick_idx,['AB']].count() > 0:
+        return make_table(pl.loc[[pick_idx],['AB', 'R', 'HR', 'RBI', 'SB','AVG']])
+    else:         
+        return make_table(pd.DataFrame({}))
+    
+@app.callback(
+    Output('pit-proj-table', 'children'),
+    [Input('pick-dropdown','value')],
+    [State('players','children')]
+)
+def update_pit_proj_table(pick,players_json):
+    pl = pd.read_json(players_json)
+    pickrank = int(pick.split('.')[0])
+    pick_idx = pl.loc[pl.Rank == pickrank].index[0]
+    pl['WHIP'] = ((pl['BB']+pl['H.P'])/pl['IP']).round(2)
+    pl['ERA'] = (9*pl['ER']/pl['IP']).round(2)
+
+    if pl.loc[pick_idx,['IP']].count() > 0:
+        return make_table(pl.loc[[pick_idx],['IP', 'ERA', 'W', 'SO', 'SV', 'WHIP']])
+    else:         
+        return make_table(pd.DataFrame({}))
+
 @app.callback(
     [Output('n-teams','children'),
      Output('position','children'),
