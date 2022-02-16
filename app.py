@@ -1,6 +1,7 @@
 import dash
 from dash import dcc
 import dash_bootstrap_components as dbc
+import dash_daq as daq
 from dash import html
 from dash.dependencies import Input, Output, State
 import pandas as pd
@@ -46,6 +47,7 @@ def get_auto_picks(start_pick,end_pick,px,pl,n_teams,roster):
                       ,ignore_index = True)
         
         pl.loc[pick_idx,'Available'] = False
+        pl.loc[pick_idx,'Team'] = team
 
     return px, pl    
 
@@ -64,6 +66,7 @@ def determine_slot(pos, ros, px):
 #######################
 
 players = pd.read_csv('players.csv')
+players['Team'] = pd.NA
 
 teamnames = 'AABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -127,7 +130,11 @@ draftpanel = [
         html.Button('Draft Player', id='draft-button', n_clicks=0),
         html.Table(make_table(pd.DataFrame({})),id='bat-proj-table',className='table'),
         html.Table(make_table(pd.DataFrame({})),id='pit-proj-table',className='table'),
-    ],id='draft-panel',style={"width": "75%"})
+        html.Div(' ',style={'height':'20px'}),
+        html.H3('Team Roster'),
+        dcc.Dropdown(id='team-roster-dropdown',options=['My-Team'], value = 'My-Team'), 
+        html.Table(make_table(pd.DataFrame({})),id='roster-table',className='table')
+    ],id='draft-panel',style={"width": "90"})
 ]
 
 pickspanel = [
@@ -143,21 +150,22 @@ pickspanel = [
     ],style = {"width": "90%"})
 ]
 
-rosterpanel = [
+projpanel = [
         html.Div([
-            html.H3('Team Roster'),
-            dcc.Dropdown(id='team-roster-dropdown',options=['My-Team'], placeholder='Select Team'), 
-            html.Table(make_table(pd.DataFrame({})),id='roster-table',className='table')
-        ],style = {"width": "75%"})
+            html.H3('Projected Standings'),
+            daq.ToggleSwitch('proj-style-toggle',value=False),
+            html.Div('Show Stats',id='proj-toggle-label'),
+            html.Table(make_table(pd.DataFrame({})),id='proj-standings-table',className='table')
+        ])
 ]
 
 # lay out the app based on the above panel definitions
 app.layout = dbc.Container([
         html.Div(header),
         html.Div(startsection,id ='start-section'),
-        html.Div(dbc.Row([dbc.Col(draftpanel, md=4),
-                 dbc.Col(rosterpanel, md=4),
-                 dbc.Col(pickspanel, md=4)])
+        html.Div(dbc.Row([dbc.Col(draftpanel, md=3),
+                 dbc.Col(pickspanel, md=4),
+                 dbc.Col(projpanel, md=5)])
                 ,id = 'main-section',style = {'display':'none'})
 ],fluid=True)
 
@@ -254,7 +262,36 @@ def update_pit_proj_table(pick,players_json):
         return make_table(pl.loc[[pick_idx],['IP', 'ERA', 'W', 'SO', 'SV', 'WHIP']])
     else:         
         return make_table(pd.DataFrame({}))
-
+    
+@app.callback(
+    [Output('proj-standings-table','children'),
+     Output('proj-toggle-label','children')],
+    [Input('players','children'),
+     Input('proj-style-toggle','value')]    
+)
+def update_proj_standings(players_json,toggle):
+    df = pd.read_json(players_json)
+    dfg=df.groupby('Team')[['AB', 'H', 'R', 'HR', 'RBI', 'SB', 'IP', 'ER', 'W',
+                            'SO', 'SV', 'H.P','BB']].sum().reset_index().sort_values('Team')
+    dfg['AVG'] = (dfg['H']/dfg['AB']).round(3)
+    dfg['ERA'] = (9*dfg['ER']/dfg['IP']).round(2)
+    dfg['WHIP'] = ((dfg['BB']+dfg['H.P'])/dfg['IP']).round(2)
+    
+    ranks = {'Team':dfg.Team}
+    for m in ['R', 'HR', 'RBI', 'SB','AVG', 'W','SO', 'SV']:
+        ranks.update({m: dfg[m].rank(ascending=False)})
+    for m in ['ERA','WHIP']:
+        ranks.update({m: dfg[m].rank()})
+    
+    rdf = pd.DataFrame(ranks,index=dfg.index)
+    rdf['Score'] = rdf.sum(axis=1)
+    
+    if toggle:
+        return make_table(rdf.sort_values('Score')), 'Show Ranks'
+    else:
+        dfg['Score'] = rdf.Score
+        return make_table(dfg[rdf.columns].sort_values('Score')), 'Show Stats'
+    
 @app.callback(
     [Output('n-teams','children'),
      Output('position','children'),
@@ -318,7 +355,8 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
                       ,ignore_index = True)
         
         pl.loc[pick_idx,'Available'] = False
-        
+        pl.loc[pick_idx,'Team'] = 'My-Team'
+
         # auto draft to next human pick or end of draft
         human_picks = [position, (2*n_teams + 1 - position)] 
         end_pick = pick_number+1
