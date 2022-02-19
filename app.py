@@ -25,9 +25,8 @@ def make_table(df):
         rows.append(html.Tr(row))
     return rows
 
-def get_auto_picks(start_pick,end_pick,px,pl,n_teams,roster):
+def get_auto_picks(start_pick,end_pick,pl,n_teams,roster):
     
-    pick_number=start_pick
     for pick_number in range(start_pick,end_pick):
     
         # auto-pick     
@@ -37,23 +36,21 @@ def get_auto_picks(start_pick,end_pick,px,pl,n_teams,roster):
         team = (teamnames[:n_teams+1]+teamnames[n_teams:0:-1])[pick_number % (2*n_teams)]
         pos= pl.loc[pick_idx,'Position(s)']
         
-        # add the autopick to the picks data
-        px = px.append({'Team':team
-                        ,'Position': pos
-                        ,'Player':pl.loc[pick_idx,'Player']
-                        ,'Round':(pick_number-1) // n_teams + 1
-                        ,'Pick':(pick_number-1) % n_teams + 1
-                        ,'Slot':determine_slot(pos,roster,px.loc[px.Team == team])}
-                      ,ignore_index = True)
-        
         pl.loc[pick_idx,'Available'] = False
+        pl.loc[pick_idx,'Rd'] = (pick_number-1) // n_teams + 1
+        pl.loc[pick_idx,'Pick'] = (pick_number-1) % n_teams + 1
+        pl.loc[pick_idx,'Slot'] = determine_slot(pos,roster,pl.loc[pl.Team == team])
         pl.loc[pick_idx,'Team'] = team
 
-    return px, pl    
+    return pl    
 
-def determine_slot(pos, ros, px):
-    m = ros.merge(px,on='Slot',how='left')
-    for p in pos.split(', ') +['UT','BE']:
+def determine_slot(pos, ros, teampl):
+    m = ros.merge(teampl,on='Slot',how='left')
+    
+    # add alternative positions
+    altpos = (['MI'] if '2B' in pos or 'SS' in pos else []) + (
+                ['CI'] if '1B' in pos or '3B' in pos else []) + ['UT','BE']
+    for p in pos.split(', ') + altpos:
         for a in m.loc[m.Player.isna()].sort_values('Num')['Slot']:
             if p in a:
                 return a
@@ -66,7 +63,7 @@ def determine_slot(pos, ros, px):
 #######################
 
 players = pd.read_csv('players.csv')
-players['Team'] = pd.NA
+players['Team'], players['Slot'], players['Rd'], players['Pick'] = (pd.NA, pd.NA, pd.NA, pd.NA)
 
 teamnames = 'AABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
@@ -85,24 +82,39 @@ startsection = [
     dbc.Row([
         dbc.Col(
             html.Div([
-                dcc.Dropdown(id='n-of-dropdown',options=list(range(3,8)),value=3), 
-                html.Div(children='Select number of OF')  
-            ],style = {'width':'75%'}), md=2),
+                dcc.Dropdown(id='n-p-dropdown',options=list(range(5,16)),value=9), 
+                html.Div(children='# of Pitchers')  
+            ],style = {'width':'90%'}), md=1),
         dbc.Col(
             html.Div([
-                dcc.Dropdown(id='n-p-dropdown',options=list(range(5,16)),value=9), 
-                html.Div(children='Select number of Pitchers')  
-            ],style = {'width':'75%'}), md=2),
+                dcc.Dropdown(id='n-of-dropdown',options=list(range(3,8)),value=3), 
+                html.Div(children='# of Outfielders')  
+            ],style = {'width':'90%'}), md=1),
+        dbc.Col(
+            html.Div([
+                dcc.Dropdown(id='n-c-dropdown',options=list(range(1,4)),value=1), 
+                html.Div(children='# of Catchers')  
+            ],style = {'width':'90%'}), md=1),
+        dbc.Col(
+            html.Div([
+                dcc.Dropdown(id='n-ci-dropdown',options=list(range(0,6)),value=1), 
+                html.Div(children='# of Corner IF')  
+            ],style = {'width':'90%'}), md=1),
+        dbc.Col(
+            html.Div([
+                dcc.Dropdown(id='n-mi-dropdown',options=list(range(0,6)),value=1), 
+                html.Div(children='# of Middle IF')  
+            ],style = {'width':'90%'}), md=1),
         dbc.Col(
             html.Div([
                 dcc.Dropdown(id='n-ut-dropdown',options=list(range(0,21)),value=2), 
-                html.Div(children='Select number of Utility players')  
-            ],style = {'width':'75%'}), md=2),
+                html.Div(children='# of Utility Players')  
+            ],style = {'width':'90%'}), md=1),
         dbc.Col(
             html.Div([
                 dcc.Dropdown(id='n-be-dropdown',options=list(range(0,21)),value=2), 
-                html.Div(children='Select number of Bench Players')  
-            ],style = {'width':'25%'}), md=6)
+                html.Div(children='# of Bench Players')  
+            ],style = {'width':'15%'}), md=6)
     ],id = 'start-row-1'),
     dbc.Row(html.Div(' ',style = {'height': "25px"})),
     dbc.Row([
@@ -125,11 +137,15 @@ startsection = [
 draftpanel = [
     html.Div([
         html.H3('Select Player'),
-        dcc.Dropdown(options = players.Rank.astype(str)+'. '+players.Name+' ('+players['Position(s)']+')'
-                     ,id = 'pick-dropdown'),
-        html.Button('Draft Player', id='draft-button', n_clicks=0),
-        html.Table(make_table(pd.DataFrame({})),id='bat-proj-table',className='table'),
-        html.Table(make_table(pd.DataFrame({})),id='pit-proj-table',className='table'),
+        dbc.Row([
+            dbc.Col([
+                dcc.Dropdown(options = players.Rank.astype(str)+'. '+players.Name+' ('+players['Position(s)']+')'
+                         ,id = 'pick-dropdown'),
+                html.Button('Draft Player', id='draft-button', n_clicks=0)],md=5),
+            dbc.Col([
+                html.Table(make_table(pd.DataFrame({})),id='bat-proj-table',className='table'),
+                html.Table(make_table(pd.DataFrame({})),id='pit-proj-table',className='table')],md=7)
+        ]),
         html.Div(' ',style={'height':'20px'}),
         html.H3('Team Roster'),
         dcc.Dropdown(id='team-roster-dropdown',options=['My-Team'], value = 'My-Team'), 
@@ -141,7 +157,6 @@ pickspanel = [
     html.Div([
         html.H3('Last Picks'),
         html.Table(make_table(pd.DataFrame({})),id='last-picks-table',className='table'),
-        html.Div(0,id='picks',style={'display': 'none'}),
         html.Div(players.to_json(),id='players',style={'display': 'none'}),
         html.Div(0,id='n-teams',style={'display': 'none'}),
         html.Div(0,id='position',style={'display': 'none'}),
@@ -163,9 +178,9 @@ projpanel = [
 app.layout = dbc.Container([
         html.Div(header),
         html.Div(startsection,id ='start-section'),
-        html.Div(dbc.Row([dbc.Col(draftpanel, md=3),
-                 dbc.Col(pickspanel, md=4),
-                 dbc.Col(projpanel, md=5)])
+        html.Div(dbc.Row([dbc.Col(draftpanel, md=5),
+                 dbc.Col(projpanel, md=5),
+                 dbc.Col(pickspanel, md=2)])
                 ,id = 'main-section',style = {'display':'none'})
 ],fluid=True)
 
@@ -177,13 +192,19 @@ app.layout = dbc.Container([
     Output('roster','children'),
     [Input('n-of-dropdown','value'),
      Input('n-p-dropdown','value'),
+     Input('n-c-dropdown','value'),
+     Input('n-mi-dropdown','value'),     
+     Input('n-ci-dropdown','value'),
      Input('n-ut-dropdown','value'),
      Input('n-be-dropdown','value'),
      Input('begin-button','n_clicks')]
 )
-def update_roster(n_of,n_p,n_ut,n_be,n_clicks):
-    slots = (['C','1B','2B','3B','SS'] + 
+def update_roster(n_of,n_p,n_c,n_mi,n_ci,n_ut,n_be,n_clicks):
+    slots = (['C'+str(i+1) for i in range(n_c)] +
+             ['1B','2B','3B','SS'] + 
              ['OF'+str(i+1) for i in range(n_of)] + 
+             ['MI'+str(i+1) for i in range(n_mi)] + 
+             ['CI'+str(i+1) for i in range(n_ci)] + 
              ['P'+str(i+1) for i in range(n_p)] + 
              ['UT'+str(i+1) for i in range(n_ut)] + 
              ['BE'+str(i+1) for i in range(n_be)])
@@ -209,26 +230,36 @@ def update_pick_options(players_json):
 
 @app.callback(
     Output('last-picks-table', 'children'),
-    [Input('picks','children')],
+    [Input('players','children')],
     [State('n-teams','children')]
 )
-def update_last_picks_table(picks_json,n_teams):
-    picks = pd.read_json(picks_json)
-    last_picks = picks.iloc[-2*n_teams:]
-    return make_table(last_picks)
+def update_last_picks_table(players_json,n_teams):
+    pl = pd.read_json(players_json)
+    last_picks = pl.loc[~pl.Team.isna()]
+    last_picks['Pick'] = (last_picks['Rd']-1)*n_teams + last_picks['Pick']
+    last_picks.loc[last_picks.Team == 'My-Team','Team'] = 'Me'
+    
+    return make_table(last_picks.sort_values('Pick',ascending = False)
+                      [['Pick','Team','Player']].iloc[0:4*n_teams])
     
 @app.callback(
     Output('roster-table', 'children'),
-    [Input('picks','children'),
+    [Input('players','children'),
      Input('team-roster-dropdown','value')],
     [State('roster','children')]
 )
-def update_roster_table(picks_json,teamchoice,roster_json):
+def update_roster_table(players_json,teamchoice,roster_json):
     ros = pd.read_json(roster_json)
-    px = pd.read_json(picks_json)
-    teampx = px.loc[px.Team == teamchoice]
-    ret = ros.merge(teampx,on='Slot',how='left').sort_values('Num')
-    return make_table(ret[['Slot','Player','Round']])
+    pl = pd.read_json(players_json)
+    pl['AVG'] = (pl['H']/pl['AB']).round(3)
+    pl['ERA'] = (9*pl['ER']/pl['IP']).round(2)
+    pl['WHIP'] = ((pl['BB']+pl['H.P'])/pl['IP']).round(2)
+    teampl = pl.loc[pl.Team == teamchoice]
+    
+    retcols = ['Slot','Player','Rd','AB','R','HR','RBI','SB','AVG',
+               'IP', 'ERA', 'W', 'SO', 'SV', 'WHIP']
+    ret = ros.merge(teampl,on='Slot',how='left').sort_values('Num')
+    return make_table(ret[retcols])
 
 @app.callback(
     Output('bat-proj-table', 'children'),
@@ -296,7 +327,6 @@ def update_proj_standings(players_json,toggle):
     [Output('n-teams','children'),
      Output('position','children'),
      Output('pick-number','children'),
-     Output('picks','children'),
      Output('players','children'),
      Output('begin-button','n_clicks'),
      Output('draft-button','n_clicks'),
@@ -314,26 +344,24 @@ def update_proj_standings(players_json,toggle):
      State('team-roster-dropdown','options'),
      State('main-section','style'),
      State('start-section','style'),
-     State('picks','children'),
      State('players','children'),
      State('roster','children')]
 )
 def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
                 prev_n_teams,prev_position,pick_number,prev_opts,
-                prev_style1,prev_style2,picks_json,players_json,roster_json):
+                prev_style1,prev_style2,players_json,roster_json):
     if begin_clicks is not None:
     
         # prepare data frames
-        px = pd.DataFrame({'Team':[],'Position':[],'Player':[],'Round':[],'Pick':[],'Slot':[]})
         pl = pd.read_json(players_json)
         ros = pd.read_json(roster_json)
     
         # initial autopicks    
-        px, pl = get_auto_picks(1, position, px, pl, n_teams, ros)   
+        pl = get_auto_picks(1, position, pl, n_teams, ros)   
         
         # list of team names
         opts = ['My-Team'] + [teamnames[i] for i in range(1,n_teams+1) if i != position]
-        return (n_teams, position, position, px.to_json(), pl.to_json(),
+        return (n_teams, position, position, pl.to_json(),
                 None, None, opts, {'display':'block'}, {'display':'none'})
 
     elif draft_clicks is not None:
@@ -343,32 +371,26 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
         pick_idx = pl.loc[pl.Rank == pickrank].index[0]
         pos = pl.loc[pick_idx,'Position(s)']
         
-        px = pd.read_json(picks_json)
         ros = pd.read_json(roster_json)
         
-        px = px.append({'Team':'My-Team'
-                        ,'Position': pos
-                        ,'Player':pl.loc[pick_idx,'Player']
-                        ,'Round':(pick_number-1) // n_teams + 1
-                        ,'Pick':(pick_number-1) % n_teams + 1
-                        ,'Slot':determine_slot(pos,ros,px.loc[px.Team == 'My-Team'])}
-                      ,ignore_index = True)
-        
         pl.loc[pick_idx,'Available'] = False
+        pl.loc[pick_idx,'Rd'] = (pick_number-1) // n_teams + 1
+        pl.loc[pick_idx,'Pick'] = (pick_number-1) % n_teams + 1
+        pl.loc[pick_idx,'Slot'] = determine_slot(pos,ros,pl.loc[pl.Team == 'My-Team'])
         pl.loc[pick_idx,'Team'] = 'My-Team'
 
         # auto draft to next human pick or end of draft
-        human_picks = [position, (2*n_teams + 1 - position)] 
+        human_picks = [position%(2*n_teams), (2*n_teams+1-position)%(2*n_teams)] 
         end_pick = pick_number+1
         while (end_pick % (n_teams*2) not in human_picks) & (end_pick <= len(ros.Num)*n_teams): 
             end_pick += 1
         
-        px, pl = get_auto_picks(pick_number+1,end_pick,px,pl,n_teams,ros)
+        pl = get_auto_picks(pick_number+1,end_pick,pl,n_teams,ros)
         
-        return (n_teams, position, end_pick, px.to_json(), pl.to_json(), 
+        return (n_teams, position, end_pick, pl.to_json(), 
                 None, None, prev_opts, prev_style1, prev_style2)
     else:
-        return (prev_n_teams, prev_position, pick_number, picks_json, players_json, 
+        return (prev_n_teams, prev_position, pick_number, players_json, 
                 None, None, prev_opts, prev_style1, prev_style2)
     
 @app.callback(
@@ -385,7 +407,6 @@ def end_draft(pick_num,n_teams,roster_json,prev_style):
     else:
         return prev_style
 
-    
 # necessary code at the bottom of all Dash apps to run the app
 if __name__ == "__main__":
     app.run_server(port = 8080)
