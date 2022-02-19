@@ -240,7 +240,7 @@ def update_last_picks_table(players_json,n_teams):
     last_picks.loc[last_picks.Team == 'My-Team','Team'] = 'Me'
     
     return make_table(last_picks.sort_values('Pick',ascending = False)
-                      [['Pick','Team','Player']].iloc[0:4*n_teams])
+                      [['Pick','Team','Player']].iloc[0:3*n_teams])
     
 @app.callback(
     Output('roster-table', 'children'),
