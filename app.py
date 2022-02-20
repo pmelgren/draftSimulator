@@ -1,7 +1,6 @@
 import dash
 from dash import dcc
 import dash_bootstrap_components as dbc
-import dash_daq as daq
 from dash import html
 from dash.dependencies import Input, Output, State
 import pandas as pd
@@ -150,7 +149,7 @@ draftpanel = [
         html.H3('Team Roster'),
         dcc.Dropdown(id='team-roster-dropdown',options=['My-Team'], value = 'My-Team'), 
         html.Table(make_table(pd.DataFrame({})),id='roster-table',className='table')
-    ],id='draft-panel',style={"width": "90"})
+    ],id='draft-panel',style={"width": "90%"})
 ]
 
 pickspanel = [
@@ -168,8 +167,7 @@ pickspanel = [
 projpanel = [
         html.Div([
             html.H3('Projected Standings'),
-            daq.ToggleSwitch('proj-style-toggle',value=False),
-            html.Div('Show Stats',id='proj-toggle-label'),
+            dcc.RadioItems(['Stats','Ranks'],'Stats',id='proj-type-radioitems',style = {'width':'200%'}),
             html.Table(make_table(pd.DataFrame({})),id='proj-standings-table',className='table')
         ])
 ]
@@ -295,12 +293,11 @@ def update_pit_proj_table(pick,players_json):
         return make_table(pd.DataFrame({}))
     
 @app.callback(
-    [Output('proj-standings-table','children'),
-     Output('proj-toggle-label','children')],
+    Output('proj-standings-table','children'),
     [Input('players','children'),
-     Input('proj-style-toggle','value')]    
+     Input('proj-type-radioitems','value')]    
 )
-def update_proj_standings(players_json,toggle):
+def update_proj_standings(players_json,proj_type):
     df = pd.read_json(players_json)
     dfg=df.groupby('Team')[['AB', 'H', 'R', 'HR', 'RBI', 'SB', 'IP', 'ER', 'W',
                             'SO', 'SV', 'H.P','BB']].sum().reset_index().sort_values('Team')
@@ -317,11 +314,11 @@ def update_proj_standings(players_json,toggle):
     rdf = pd.DataFrame(ranks,index=dfg.index)
     rdf['Score'] = rdf.sum(axis=1)
     
-    if toggle:
-        return make_table(rdf.sort_values('Score')), 'Show Ranks'
+    if proj_type == 'Ranks':
+        return make_table(rdf.sort_values('Score'))
     else:
         dfg['Score'] = rdf.Score
-        return make_table(dfg[rdf.columns].sort_values('Score')), 'Show Stats'
+        return make_table(dfg[rdf.columns].sort_values('Score'))
     
 @app.callback(
     [Output('n-teams','children'),
