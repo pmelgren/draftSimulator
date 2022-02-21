@@ -26,15 +26,20 @@ def make_table(df):
 
 def get_auto_picks(start_pick,end_pick,pl,n_teams,roster):
     
+    randweights = [0]*25+[1]*9+[2]*5+[3]*3+[4]*2+[5]*2+[6]+[7]+[8]+[9]
+
     for pick_number in range(start_pick,end_pick):
     
-        # auto-pick     
-        randweights = [0]*25+[1]*9+[2]*5+[3]*3+[4]*2+[5]*2+[6]+[7]+[8]+[9]
-        pick_no = randweights[random.randrange(0,49)]
-        pick_idx = pl.loc[pl.Available].sort_values('Rank',ascending=True).index[pick_no]
+        # determine team needs
         team = (teamnames[:n_teams+1]+teamnames[n_teams:0:-1])[pick_number % (2*n_teams)]
+        pln = remove_unneeded_players(pl, roster, team)
+        
+        # use randomness to determine which player will be selected
+        pick_no = randweights[random.randrange(0,49)] 
+        pick_idx = pln.sort_values('Rank',ascending=True).index[pick_no] 
         pos= pl.loc[pick_idx,'Position(s)']
         
+        # update players table
         pl.loc[pick_idx,'Available'] = False
         pl.loc[pick_idx,'Rd'] = (pick_number-1) // n_teams + 1
         pl.loc[pick_idx,'Pick'] = (pick_number-1) % n_teams + 1
@@ -55,6 +60,19 @@ def determine_slot(pos, ros, teampl):
                 return a
     else:
         return '-'
+    
+def remove_unneeded_players(pl,roster,team):
+    
+    # Remove the players from pl that team doesn't need based on roster
+    teampl = pl.loc[pl.Team == team]
+    teamros = roster.merge(teampl,on = 'Slot',how='left')
+    needs = teamros.loc[teamros.Player.isna(),'Slot'].str.replace('\d+$','',regex=True)
+    
+    # filter players that don't match roster needs
+    if needs.str.match('BE|UT').sum() == 0:
+        return pl.loc[pl['Position(s)'].str.match('|'.join(needs)) & pl['Available']]
+    else:
+        return pl.loc[pl['Available']]
 
 
 #######################
@@ -135,17 +153,19 @@ startsection = [
 # put the table of the sorted data in the left half of the screen
 draftpanel = [
     html.Div([
-        html.H3('Select Player'),
-        dbc.Row([
-            dbc.Col([
-                dcc.Dropdown(options = players.Rank.astype(str)+'. '+players.Name+' ('+players['Position(s)']+')'
-                         ,id = 'pick-dropdown'),
-                html.Button('Draft Player', id='draft-button', n_clicks=0)],md=5),
-            dbc.Col([
-                html.Table(make_table(pd.DataFrame({})),id='bat-proj-table',className='table'),
-                html.Table(make_table(pd.DataFrame({})),id='pit-proj-table',className='table')],md=7)
-        ]),
-        html.Div(' ',style={'height':'20px'}),
+        html.Div([
+            html.H3('Select Player'),
+            dbc.Row([
+                dbc.Col([
+                    dcc.Dropdown(options = players.Rank.astype(str)+'. '+players.Name+' ('+players['Position(s)']+')'
+                             ,id = 'pick-dropdown'),
+                    html.Button('Draft Player', id='draft-button', n_clicks=0)],md=5),
+                dbc.Col([
+                    html.Table(make_table(pd.DataFrame({})),id='bat-proj-table',className='table'),
+                    html.Table(make_table(pd.DataFrame({})),id='pit-proj-table',className='table')],md=7)
+            ]),
+            html.Div(' ',style={'height':'20px'})
+        ],id = 'draft-div'),
         html.H3('Team Roster'),
         dcc.Dropdown(id='team-roster-dropdown',options=['My-Team'], value = 'My-Team'), 
         html.Table(make_table(pd.DataFrame({})),id='roster-table',className='table')
@@ -214,17 +234,19 @@ def update_roster(n_of,n_p,n_c,n_mi,n_ci,n_ut,n_be,n_clicks):
     Output('position-dropdown', 'options'),
     [Input('n-teams-dropdown', 'value')]
 )
-def update_date_dropdown(num_teams):
+def update_position_dropdown(num_teams):
     return list(range(1,num_teams+1))
 
 @app.callback(
     [Output('pick-dropdown','options')],
-    [Input('players','children')]
+    [Input('players','children'),
+     Input('roster','children')]
 )
-def update_pick_options(players_json):
+def update_pick_options(players_json,roster_json):
     pl = pd.read_json(players_json)
-    pl = pl.loc[pl.Available]
-    return [list(pl.Rank.astype(str)+'. '+pl.Player+' ('+pl['Position(s)']+')')]
+    roster = pd.read_json(roster_json)
+    pln = remove_unneeded_players(pl, roster, 'My-Team')
+    return [list(pln.Rank.astype(str)+'. '+pln.Player+' ('+pln['Position(s)']+')')]
 
 @app.callback(
     Output('last-picks-table', 'children'),
@@ -391,11 +413,11 @@ def update_data(begin_clicks,n_teams,position,draft_clicks,pick,
                 None, None, prev_opts, prev_style1, prev_style2)
     
 @app.callback(
-    Output('draft-panel','style'),
+    Output('draft-div','style'),
     [Input('pick-number','children')],
     [State('n-teams','children'),
      State('roster','children'),
-     State('draft-panel','style')]
+     State('draft-div','style')]
 )
 def end_draft(pick_num,n_teams,roster_json,prev_style):
     ros = pd.read_json(roster_json)
