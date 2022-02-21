@@ -66,10 +66,16 @@ def remove_unneeded_players(pl,roster,team):
     # Remove the players from pl that team doesn't need based on roster
     teampl = pl.loc[pl.Team == team]
     teamros = roster.merge(teampl,on = 'Slot',how='left')
-    needs = teamros.loc[teamros.Player.isna(),'Slot'].str.replace('\d+$','',regex=True)
+    needs = list(teamros.loc[teamros.Player.isna(),'Slot'].str.replace('\d+$','',regex=True))
+    
+    # handle MI and CI
+    if 'MI' in needs:
+        needs = needs + ['SS','2B']
+    if 'CI' in needs:
+        needs = needs + ['1B','3B']
     
     # filter players that don't match roster needs
-    if needs.str.match('BE|UT').sum() == 0:
+    if ('BE' not in needs) and  ('UT' not in needs):
         return pl.loc[pl['Position(s)'].str.match('|'.join(needs)) & pl['Available']]
     else:
         return pl.loc[pl['Available']]
