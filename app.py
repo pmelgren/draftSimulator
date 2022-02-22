@@ -5,6 +5,7 @@ from dash import html
 from dash.dependencies import Input, Output, State
 import pandas as pd
 import random
+import re
 
 
 #######################
@@ -56,7 +57,7 @@ def determine_slot(pos, ros, teampl):
                 ['CI'] if '1B' in pos or '3B' in pos else []) + ['UT','BE']
     for p in pos.split(', ') + altpos:
         for a in m.loc[m.Player.isna()].sort_values('Num')['Slot']:
-            if p in a:
+            if p == re.sub('\d$','',a):
                 return a
     else:
         return '-'
